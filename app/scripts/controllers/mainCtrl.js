@@ -2,16 +2,18 @@
 
 /**
  * @ngdoc function
- * @name zenCityApp.controller:MainCtrl
+ * @name zenCityApp.controller:mainCtrl
  * @description
- * # MainCtrl
+ * # mainCtrl
  * Controller of the zenCityApp
  */
 angular.module('zenCityApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('mainCtrl', function ($scope, $routeParams, $rootScope, mainSvc) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    
   });

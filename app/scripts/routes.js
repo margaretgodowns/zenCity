@@ -59,7 +59,7 @@ angular.module('zenCityApp')
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'mainCtrl'
       })
 
       .when('/login', {

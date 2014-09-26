@@ -22,10 +22,21 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
-        <img class="backImgs" src="../images/yogaKingStreet.jpeg" alt="" />
-        <img id="headerLogo" src="../images/logoZenRound2.png" alt="" />
+      <div class="row">
+        <div class="col-md-12">
+          <nav>
+            <ul class="navBar">
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Submit an Event</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
+
+    </div>
 
       <div ng-view=""></div>
 
@@ -82,7 +93,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/mainCtrl.js"></script>
+        <script src="scripts/controllers/mainSvc.js"></script>
         <script src="scripts/angularfire/config.js"></script>
         <script src="scripts/angularfire/firebase.utils.js"></script>
         <script src="scripts/filters/reverse.js"></script>
