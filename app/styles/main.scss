@@ -1,11 +1,17 @@
+//general styles
+
+.container{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.col-md-12{
+  padding: 0px;
+}
+
 //index.html
 
-.navBar{
-  display: inline-block;
-  li{
-    display: inline-block;
-  }
-}
 
 //main.html
 
@@ -16,8 +22,21 @@
     width: 100%;
   }
   #headerLogo{
-    margin-top: -500px;
-    margin-left: 250px;
+    margin-top: -650px;
+    margin-left: 42%;
+  }
+}
+
+//main navigation
+
+.navBar{
+  display: inline-block;
+  li{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    a{
+      color: black;
+    }
   }
 }
 
@@ -25,6 +44,8 @@
 
 h2{
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
 }
 nav{
   text-align: center;
@@ -32,6 +53,10 @@ nav{
   display: inline-block;
   li{
     display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    a{
+      color: black;
+    }
   }
 }
 }

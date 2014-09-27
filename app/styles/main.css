@@ -1,20 +1,36 @@
-.navBar {
-  display: inline-block; }
-  .navBar li {
-    display: inline-block; }
+.container {
+  margin: 0px;
+  padding: 0px;
+  width: 100%; }
+
+.col-md-12 {
+  padding: 0px; }
 
 .header .backImgs {
   width: 100%; }
 .header #headerLogo {
-  margin-top: -500px;
-  margin-left: 250px; }
+  margin-top: -650px;
+  margin-left: 42%; }
+
+.navBar {
+  display: inline-block; }
+  .navBar li {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif; }
+    .navBar li a {
+      color: black; }
 
 h2 {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: black; }
 
 nav {
   text-align: center; }
   nav .eventsNav {
     display: inline-block; }
     nav .eventsNav li {
-      display: inline-block; }
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif; }
+      nav .eventsNav li a {
+        color: black; }
