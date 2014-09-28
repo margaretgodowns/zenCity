@@ -22,20 +22,23 @@
     width: 100%;
   }
   #headerLogo{
-    margin-top: -650px;
+    margin-top: -1000px;
     margin-left: 42%;
   }
 }
 
 //main navigation
-
-.navBar{
-  display: inline-block;
-  li{
+.mainNav{
+  margin-top: -665px;
+  .navBar{
     display: inline-block;
-    font-family: 'Open Sans', sans-serif;
-    a{
-      color: black;
+    li{
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      a{
+        color: white;
+        font-size: 1.5em;
+      }
     }
   }
 }
@@ -49,14 +52,14 @@ h2{
 }
 nav{
   text-align: center;
-.eventsNav{
-  display: inline-block;
-  li{
+  .eventsNav{
     display: inline-block;
-    font-family: 'Open Sans', sans-serif;
-    a{
-      color: black;
+    li{
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      a{
+        color: black;
+      }
     }
   }
-}
 }

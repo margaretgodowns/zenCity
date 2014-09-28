@@ -8,12 +8,12 @@
  * Controller of the zenCityApp
  */
 angular.module('zenCityApp')
-  .controller('mainCtrl', function ($scope, $routeParams, $rootScope, mainSvc) {
+  .controller('mainCtrl', function ($scope, fbutil) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    
+
   });
