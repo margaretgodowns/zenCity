@@ -1,7 +1,9 @@
 {
   "name": "zencity",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "angular-bootstrap": "^0.11.0"
+  },
   "devDependencies": {
     "chalk": "^0.4.0",
     "grunt": "^0.4.5",

@@ -17,5 +17,6 @@ angular.module('zenCityApp', [
     'ngTouch',
     'firebase',
     'firebase.utils',
-    'simpleLogin'
+    'simpleLogin',
+    // 'ui.bootstrap'
   ]);

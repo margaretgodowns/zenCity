@@ -59,19 +59,19 @@
        <div class="row">
          <div class="moreInfo"
        <div ng-show="moreInfo">
-         <div class="col-md-3">
+         <div class="row">
            {{event.time}}
          </div>
-         <div class="col-md-3">
+         <div class="row">
            {{event.location}}
          </div>
-         <div class="col-md-3">
+         <div class="row">
            {{event.address}}<br>
            {{event.address2}}
          </div>
-         <div class="col-md-3">
-           {{event.website}}
-         </div>
+         <div class="row">
+           <a href="{{event.website}}">{{event.website}}</a>
+          </div>
 
        </div>
      </div>
@@ -94,7 +94,7 @@
         <input ng-model="singleEvent.yourName" class="form-control" type="text" placeholder="Your Name">
         <input ng-model="singleEvent.yourEmail" class="form-control" type="text" placeholder="Your Email">
         <input ng-model="singleEvent.studio" class="form-control" type="text" placeholder="Studio/Organization">
-        <input ng-model="singleEvent.website" class="form-control" type="text" placeholder="Website">
+        <input type="url" ng-model="singleEvent.website" class="form-control" type="text" placeholder="Website">
 
         <textarea ng-model="singleEvent.description" class="form-control" rows="3" placeholder="Event Description"></textarea>
         <h4>Event Type</h4>
