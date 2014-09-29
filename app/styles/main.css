@@ -6,11 +6,13 @@
 .col-md-12 {
   padding: 0px; }
 
+.row {
+  text-align: center; }
+
 .header .backImgs {
   width: 100%; }
 .header #headerLogo {
-  margin-top: -1000px;
-  margin-left: 42%; }
+  margin-top: -1000px; }
 
 .mainNav {
   margin-top: -665px; }
@@ -31,9 +33,31 @@ h2 {
 nav {
   text-align: center; }
   nav .eventsNav {
-    display: inline-block; }
+    list-style-type: none; }
     nav .eventsNav li {
       display: inline-block;
       font-family: 'Open Sans', sans-serif; }
       nav .eventsNav li a {
         color: black; }
+
+.moreInfo {
+  width: 50%;
+  margin: auto; }
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: black; }
+
+form {
+  width: 50%;
+  margin: auto; }
+
+.submitEvent {
+  text-align: center; }
+  .submitEvent .eventInfo {
+    margin: auto;
+    width: 41.5%; }
+  .submitEvent input {
+    margin-bottom: 10px; }
+  .submitEvent button {
+    margin-top: 10px; }

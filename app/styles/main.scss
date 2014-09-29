@@ -10,6 +10,10 @@
   padding: 0px;
 }
 
+.row{
+  text-align: center;
+}
+
 //index.html
 
 
@@ -23,7 +27,6 @@
   }
   #headerLogo{
     margin-top: -1000px;
-    margin-left: 42%;
   }
 }
 
@@ -44,7 +47,6 @@
 }
 
 //event list
-
 h2{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -53,7 +55,7 @@ h2{
 nav{
   text-align: center;
   .eventsNav{
-    display: inline-block;
+    list-style-type: none;
     li{
       display: inline-block;
       font-family: 'Open Sans', sans-serif;
@@ -61,5 +63,34 @@ nav{
         color: black;
       }
     }
+  }
+}
+.moreInfo{
+  width: 50%;
+  margin: auto;
+}
+
+
+h4{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+//submit event
+form{
+  width: 50%;
+  margin: auto;
+}
+.submitEvent{
+  text-align: center;
+  .eventInfo{
+    margin: auto;
+    width: 41.5%;
+  }
+  input{
+    margin-bottom: 10px;
+  }
+  button{
+    margin-top: 10px;
   }
 }
