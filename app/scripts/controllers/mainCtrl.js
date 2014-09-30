@@ -15,9 +15,12 @@ angular.module('zenCityApp')
       'Karma'
     ];
 
+  $scope.limit = 2;
   $scope.events = mainSvc.getEvents();
 
   $scope.addSingleEvent = function (singleEvent) {
     mainSvc.addEvent(singleEvent);
-  }
+    $scope.singleEvent= {};
+  };
+
   });

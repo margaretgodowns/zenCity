@@ -18,5 +18,6 @@ angular.module('zenCityApp', [
     'firebase',
     'firebase.utils',
     'simpleLogin',
-    // 'ui.bootstrap'
+    'angularMoment',
+    'ui.bootstrap'
   ]);
