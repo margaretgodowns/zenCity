@@ -6,6 +6,7 @@ angular.module("zenCityApp")
     var sync = $firebase(ref);
 
     var getEvents = function() {
+      console.log(sync.$asObject());
       return sync.$asObject();
 
     };

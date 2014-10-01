@@ -18,6 +18,14 @@ angular.module('zenCityApp')
   $scope.limit = 2;
   $scope.events = mainSvc.getEvents();
 
+  $scope.combine = function(date,time) {
+    if (date && time) {
+      return date + ' ' + time;
+    } else {
+      return "";
+    }
+  };
+
   $scope.addSingleEvent = function (singleEvent) {
     mainSvc.addEvent(singleEvent);
     $scope.singleEvent= {};
