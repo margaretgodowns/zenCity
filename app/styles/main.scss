@@ -1,5 +1,13 @@
 //general styles
 
+body{
+  background-image: url('../images/altHeader4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 .container{
   margin: 0px;
   padding: 0px;
@@ -22,22 +30,22 @@
 //header
 
 .header{
+  height: 700px;
   .backImgs{
     width: 100%;
   }
   #headerLogo{
-    margin-top: -1000px;
   }
 }
 
 //main navigation
 .mainNav{
-  margin-top: -665px;
   .navBar{
     display: inline-block;
     li{
       display: inline-block;
       font-family: 'Open Sans', sans-serif;
+      padding: 15px;
       a{
         color: white;
         font-size: 1.5em;
@@ -47,28 +55,35 @@
 }
 
 //event list
-h2{
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
+.eventsList{
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  opacity: .7;
+  margin-bottom: 15px;
 }
-nav{
-  text-align: center;
-  .eventsNav{
-    list-style-type: none;
-    li{
-      display: inline-block;
-      font-family: 'Open Sans', sans-serif;
-      a{
-        color: black;
+  h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+  }
+  nav{
+    text-align: center;
+    .eventsNav{
+      list-style-type: none;
+      li{
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        a{
+          color: black;
+        }
       }
     }
   }
-}
-.moreInfo{
-  width: 50%;
-  margin: auto;
-}
+  .moreInfo{
+    width: 50%;
+    margin: auto;
+  }
 
 
 h4{
@@ -83,6 +98,11 @@ form{
 }
 .submitEvent{
   text-align: center;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  opacity: .7;
+  margin-top: 15px;
   .eventInfo{
     margin: auto;
     width: 41.5%;
@@ -92,5 +112,6 @@ form{
   }
   button{
     margin-top: 15px;
+    margin-bottom: 15px;
   }
 }

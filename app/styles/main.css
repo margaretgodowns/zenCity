@@ -1,3 +1,10 @@
+body {
+  background-image: url('../images/altHeader4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
 .container {
   margin: 0px;
   padding: 0px;
@@ -9,21 +16,27 @@
 .row {
   text-align: center; }
 
-.header .backImgs {
-  width: 100%; }
-.header #headerLogo {
-  margin-top: -1000px; }
+.header {
+  height: 700px; }
+  .header .backImgs {
+    width: 100%; }
 
-.mainNav {
-  margin-top: -665px; }
-  .mainNav .navBar {
-    display: inline-block; }
-    .mainNav .navBar li {
-      display: inline-block;
-      font-family: 'Open Sans', sans-serif; }
-      .mainNav .navBar li a {
-        color: white;
-        font-size: 1.5em; }
+.mainNav .navBar {
+  display: inline-block; }
+  .mainNav .navBar li {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px; }
+    .mainNav .navBar li a {
+      color: white;
+      font-size: 1.5em; }
+
+.eventsList {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  opacity: 0.7;
+  margin-bottom: 15px; }
 
 h2 {
   text-align: center;
@@ -53,11 +66,17 @@ form {
   margin: auto; }
 
 .submitEvent {
-  text-align: center; }
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  opacity: 0.7;
+  margin-top: 15px; }
   .submitEvent .eventInfo {
     margin: auto;
     width: 41.5%; }
   .submitEvent input {
     margin-bottom: 10px; }
   .submitEvent button {
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 15px; }
