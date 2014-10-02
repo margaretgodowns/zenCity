@@ -36,19 +36,6 @@ angular.module('zenCityApp')
     }
   };
 
-
-
-  // $scope.dateToday = Date.parse(curr_month + "/" + curr_date + "/" + curr_year);
-  // $scope.dateRange = " ";
-  //
-  // $scope.eventDateFilter = function(datePicked) {
-  //   if (datePicked === 'Today') {
-  //     $scope.dateRange = $scope.dateToday;
-  //   }
-  // };
-
-
-
   $scope.addSingleEvent = function (singleEvent) {
     mainSvc.addEvent(singleEvent);
     $scope.singleEvent= {};
