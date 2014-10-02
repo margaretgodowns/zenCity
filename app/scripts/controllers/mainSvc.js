@@ -6,10 +6,15 @@ angular.module("zenCityApp")
     var sync = $firebase(ref);
 
     var getEvents = function() {
-      console.log(sync.$asObject());
-      return sync.$asObject();
+      return sync.$asArray();
 
     };
+
+    // var today = new (Date);
+    // var curr_date = today.getDate();
+    // var curr_month = today.getMonth()+1;
+    // var curr_year = today.getFullYear();
+
 
     var addEvent = function (singleEvent) {
       ref.push(singleEvent);

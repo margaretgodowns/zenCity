@@ -46,17 +46,16 @@ body{
       display: inline-block;
       font-family: 'Open Sans', sans-serif;
       padding: 15px;
-      a{
-        color: white;
-        font-size: 1.5em;
-      }
+      color: white;
+      font-size: 1.5em;
     }
   }
 }
 
 //event list
 .eventsList{
-  width: 50%;
+  padding: 10px;
+  width: 65%;
   margin: auto;
   background-color: white;
   opacity: .7;
@@ -81,8 +80,11 @@ body{
     }
   }
   .moreInfo{
-    width: 50%;
+    width: 65%;
     margin: auto;
+    button{
+      margin-bottom: 10px;
+    }
   }
 
 
@@ -103,6 +105,7 @@ form{
   background-color: white;
   opacity: .7;
   margin-top: 15px;
+  padding: 10px;
   .eventInfo{
     margin: auto;
     width: 41.5%;
