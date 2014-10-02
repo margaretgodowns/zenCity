@@ -48,6 +48,7 @@ angular.module('zenCityApp')
   // };
 
 
+
   $scope.addSingleEvent = function (singleEvent) {
     mainSvc.addEvent(singleEvent);
     $scope.singleEvent= {};

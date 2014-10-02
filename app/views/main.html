@@ -72,7 +72,7 @@
     <div ng-controller="mainCtrl">
 
 
-      <div ng-repeat="event in events | limitTo:100 | filter:tfilter | orderBy: 'date'">
+      <div ng-repeat="event in events | limitTo:100 | filter:tfilter | orderBy: 'date' | filterPastDates">
         <div class="row">
           <div class="col-md-6">
             <h4>{{event.date | amDateFormat:'MMMM Do'}}</h4>
