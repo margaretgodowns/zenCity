@@ -36,8 +36,23 @@
       </div>
       <div class="row">
         <div ng-controller="mainCtrl">
-          <div ng-repeat "event in events | orderBy: 'date' | eventdateFilter">
-            <h4>{{event.date | amDateFormat:'MMMM Do'}}</h4>
+          <div ng-repeat="event in events | eventDateFilter | orderBy: 'date'">
+
+            <div class="row">
+              <h4>{{event.name}}</h4>
+            </div>
+            <div class="row">
+              {{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}}
+            </div>
+            <div class="row">
+              {{event.location}}
+            </div>
+            <div class="row">
+              {{event.description}}
+            </div>
+            <div class="row">
+              <a href="{{event.website}}">Go to Webpage</a>
+            </div>
           </div>
 
         </div>
@@ -79,11 +94,14 @@
 
 
           <div ng-repeat="event in events | limitTo:100 | filter:tfilter | orderBy: 'date' | filterPastDates">
-            <div class="row beforeMore">
-              <div class="col-md-6" id="eventDateFormat">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="../images/smallLogo.png" alt="" />
+              </div>
+              <div class="col-md-5">
                 <h4>{{event.date | amDateFormat:'MMMM Do'}}</h4>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <h4>{{event.name}}</h4>
               </div>
             </div>
@@ -95,7 +113,7 @@
 
 
             <div class="row">
-              <button ng-click="moreInfo = true" ng-hide="moreInfo">More Info</button>
+              <button ng-click="moreInfo = true" ng-hide="moreInfo">+</button>
             </div>
             <div class="row">
               <div class="moreInfo">

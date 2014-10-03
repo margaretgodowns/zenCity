@@ -25,7 +25,7 @@ body {
 
 .topNav {
   width: 100%;
-  background-color: #3a4c52;
+  background-color: #8cb0bb;
   margin: auto;
   opacity: 0.7;
   position: fixed;
@@ -48,6 +48,12 @@ body {
   margin-bottom: 15px; }
   .eventsToday .row {
     margin: auto; }
+    .eventsToday .row h4 {
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      margin-top: 40px;
+      text-align: center;
+      padding: 5px; }
 
 .futureEvents {
   padding: 10px;
@@ -58,11 +64,12 @@ body {
   margin-bottom: 15px; }
   .futureEvents .row {
     margin: auto; }
-  .futureEvents .beforeMore {
-    height: 30px; }
-    .futureEvents .beforeMore #eventDateFormat {
-      border-radius: 100%;
-      background: red; }
+    .futureEvents .row h4 {
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      margin-top: 40px;
+      text-align: left;
+      padding: 5px; }
 
 h2 {
   text-align: center;
@@ -85,10 +92,6 @@ nav {
   padding: 15px; }
   .moreInfo button {
     margin-bottom: 10px; }
-
-h4 {
-  font-family: 'Open Sans', sans-serif;
-  color: black; }
 
 form {
   width: 60%;

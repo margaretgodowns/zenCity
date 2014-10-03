@@ -13,7 +13,7 @@ angular.module('zenCityApp')
   return function (events) {
     if (events && events.length) {
       var filtered = [];
-      var cutOffDate = moment().startOf('day').subtract(1, 'millisecond');
+      var cutOffDate = moment().endOf('day');
       for (var i = 0; i < events.length; i++) {
         var evt = events[i];
         if (cutOffDate.isBefore(evt.date)) {
