@@ -61,13 +61,36 @@ body{
 }
 
 //event list
-.eventsList{
+
+.eventsToday{
   padding: 10px;
-  width: 100%;
+  width: 95%;
   margin: auto;
   background-color: white;
   opacity: .7;
   margin-bottom: 15px;
+  .row{
+    margin: auto;
+  }
+}
+.futureEvents{
+  padding: 10px;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  opacity: .7;
+  margin-bottom: 15px;
+  .row{
+    margin: auto;
+  }
+  .beforeMore{
+    height: 30px;
+
+  #eventDateFormat{
+    border-radius: 100%;
+    background: red;
+  }
+}
 }
 h2{
   text-align: center;
@@ -90,6 +113,7 @@ nav{
 .moreInfo{
   width: 100%;
   margin: auto;
+  padding: 15px;
   button{
     margin-bottom: 10px;
   }

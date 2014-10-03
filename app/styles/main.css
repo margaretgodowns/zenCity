@@ -39,13 +39,30 @@ body {
       color: white;
       font-size: 1.5em; }
 
-.eventsList {
+.eventsToday {
   padding: 10px;
-  width: 100%;
+  width: 95%;
   margin: auto;
   background-color: white;
   opacity: 0.7;
   margin-bottom: 15px; }
+  .eventsToday .row {
+    margin: auto; }
+
+.futureEvents {
+  padding: 10px;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  opacity: 0.7;
+  margin-bottom: 15px; }
+  .futureEvents .row {
+    margin: auto; }
+  .futureEvents .beforeMore {
+    height: 30px; }
+    .futureEvents .beforeMore #eventDateFormat {
+      border-radius: 100%;
+      background: red; }
 
 h2 {
   text-align: center;
@@ -64,7 +81,8 @@ nav {
 
 .moreInfo {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  padding: 15px; }
   .moreInfo button {
     margin-bottom: 10px; }
 
