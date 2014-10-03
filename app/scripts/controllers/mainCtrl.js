@@ -1,19 +1,19 @@
 'use strict';
 
 /**
- * @ngdoc function
- * @name zenCityApp.controller:mainCtrl
- * @description
- * # mainCtrl
- * Controller of the zenCityApp
- */
+* @ngdoc function
+* @name zenCityApp.controller:mainCtrl
+* @description
+* # mainCtrl
+* Controller of the zenCityApp
+*/
 angular.module('zenCityApp')
-  .controller('mainCtrl', function ($scope, fbutil, mainSvc, $anchorScroll, $location) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+.controller('mainCtrl', function ($scope, fbutil, mainSvc, $anchorScroll, $location) {
+  $scope.awesomeThings = [
+  'HTML5 Boilerplate',
+  'AngularJS',
+  'Karma'
+  ];
 
 
   $scope.events = mainSvc.getEvents();
@@ -41,4 +41,4 @@ angular.module('zenCityApp')
     $scope.singleEvent= {};
   };
 
-  });
+});
