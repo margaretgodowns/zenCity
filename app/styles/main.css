@@ -20,19 +20,28 @@ body {
   height: 700px; }
   .header .backImgs {
     width: 100%; }
+  .header #headerLogo {
+    margin-top: 3%; }
 
-.mainNav .navBar {
-  display: inline-block; }
-  .mainNav .navBar li {
+.topNav {
+  width: 100%;
+  background-color: #3a4c52;
+  margin: auto;
+  opacity: 0.7;
+  position: fixed;
+  z-index: 5; }
+  .topNav .mainNav .navBar {
     display: inline-block;
-    font-family: 'Open Sans', sans-serif;
-    padding: 15px;
-    color: white;
-    font-size: 1.5em; }
+    margin-bottom: 0px; }
+    .topNav .mainNav .navBar li {
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-size: 1.5em; }
 
 .eventsList {
   padding: 10px;
-  width: 65%;
+  width: 100%;
   margin: auto;
   background-color: white;
   opacity: 0.7;
@@ -54,7 +63,7 @@ nav {
         color: black; }
 
 .moreInfo {
-  width: 65%;
+  width: 100%;
   margin: auto; }
   .moreInfo button {
     margin-bottom: 10px; }
@@ -64,12 +73,12 @@ h4 {
   color: black; }
 
 form {
-  width: 50%;
+  width: 60%;
   margin: auto; }
 
 .submitEvent {
   text-align: center;
-  width: 65%;
+  width: 100%;
   margin: auto;
   background-color: white;
   opacity: 0.7;

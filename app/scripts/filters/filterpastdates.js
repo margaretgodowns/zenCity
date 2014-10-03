@@ -9,25 +9,20 @@
  * Filter in the zenCityApp.
  */
 angular.module('zenCityApp')
-  .filter('filterPastDates', function (moment) {
+  .filter('filterPastDates', function () {
     return function (events) {
-      var filterByDate = [];
-      for (var i = 0; i < events.length; i++) {
-
-        var currentDate = new Date();
-
-        // var dateChecked = new Date(events[i].date).getTime();
-
-        if(moment(currentDate).isBefore(events[i].date, 'hour')) {
-          console.log("we're in!");
-          filterByDate.push(events[i]);
-          console.log(filterByDate);
+      if (events && events.length) {
+        var filtered = [];
+        var cutOffDate = moment().startOf('day').subtract(1, 'millisecond');
+        for (var i = 0; i < events.length; i++) {
+          var evt = events[i];
+          if (cutOffDate.isBefore(evt.date)) {
+            filtered.push(evt);
+          }
         }
-
-        // if (currentDate <= Date.parse(events[i].date)) {
-        //   filterByDate.push(events[i]);
-        // }
+        return filtered;
+      } else {
+        return events;
       }
-      return filterByDate;
     };
   });
