@@ -32,33 +32,38 @@ body{
   .backImgs{
     width: 100%;
   }
+  .navMenu{
+    text-align: left;
+    margin-left: 20px;
+    ul{
+      list-style-type: none;
+      li{
+        background: transparent;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-size: 1.5em;
+        margin-left: -32px;
+        border: none;
+        margin-bottom: 0px;
+      }
+    }
+  }
   #headerLogo{
     margin-top: 3%;
+  }
+  img{
+    background-color: transparent;
+    border: none;
+    :hover{
+      background-color: transparent;
+      opacity: .5;
+    }
   }
 }
 
 //main navigation
 
-.topNav{
-  width: 100%;
-  background-color: #8cb0bb;
-  margin: auto;
-  opacity: .7;
-  position: fixed;
-  z-index: 5;
-  .mainNav{
-    .navBar{
-      display: inline-block;
-      margin-bottom: 0px;
-      li{
-        display: inline-block;
-        font-family: 'Open Sans', sans-serif;
-        color: white;
-        font-size: 1.5em;
-      }
-    }
-  }
-}
+
 
 //event list
 
@@ -87,6 +92,8 @@ body{
   background-color: white;
   opacity: .7;
   margin-bottom: 15px;
+  height: 1000px;
+  overflow: scroll;
   .row{
     margin: auto;
     h4{
@@ -95,6 +102,13 @@ body{
       margin-top: 40px;
       text-align: left;
       padding: 5px;
+    }
+    .arrows:hover{
+      cursor: pointer;
+      opacity: .5;
+    }
+    a{
+      color: #8cb0bb;
     }
   }
 

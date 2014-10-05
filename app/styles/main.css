@@ -20,24 +20,27 @@ body {
   height: 700px; }
   .header .backImgs {
     width: 100%; }
+  .header .navMenu {
+    text-align: left;
+    margin-left: 20px; }
+    .header .navMenu ul {
+      list-style-type: none; }
+      .header .navMenu ul li {
+        background: transparent;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-size: 1.5em;
+        margin-left: -32px;
+        border: none;
+        margin-bottom: 0px; }
   .header #headerLogo {
     margin-top: 3%; }
-
-.topNav {
-  width: 100%;
-  background-color: #8cb0bb;
-  margin: auto;
-  opacity: 0.7;
-  position: fixed;
-  z-index: 5; }
-  .topNav .mainNav .navBar {
-    display: inline-block;
-    margin-bottom: 0px; }
-    .topNav .mainNav .navBar li {
-      display: inline-block;
-      font-family: 'Open Sans', sans-serif;
-      color: white;
-      font-size: 1.5em; }
+  .header img {
+    background-color: transparent;
+    border: none; }
+    .header img :hover {
+      background-color: transparent;
+      opacity: 0.5; }
 
 .eventsToday {
   padding: 10px;
@@ -61,7 +64,9 @@ body {
   margin: auto;
   background-color: white;
   opacity: 0.7;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  height: 1000px;
+  overflow: scroll; }
   .futureEvents .row {
     margin: auto; }
     .futureEvents .row h4 {
@@ -70,6 +75,11 @@ body {
       margin-top: 40px;
       text-align: left;
       padding: 5px; }
+    .futureEvents .row .arrows:hover {
+      cursor: pointer;
+      opacity: 0.5; }
+    .futureEvents .row a {
+      color: #8cb0bb; }
 
 h2 {
   text-align: center;

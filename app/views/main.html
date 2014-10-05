@@ -2,14 +2,18 @@
 
   <!-- header -->
   <div class="header">
-    <div class="row topNav">
+    <div class="row">
 
-      <nav class="mainNav">
-        <ul class="navBar">
-          <li ng-click="scrollTo('eventsSection')">Events</li>
-          <li ng-click="scrollTo('submitSection')">Submit an Event</li>
-        </ul>
-      </nav>
+      <div ng-controller="mainCtrl" class="navMenu">
+	<img src="../images/hamburger.png" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
+	<div collapse="!isCollapsed">
+	<ul>
+	  <li ng-click="scrollTo('eventsSection')" class="well well-lg">Events</li>
+		<li ng-click="scrollTo('eventsSection')" class="well well-lg">Submit an Event</li>
+	</ul>
+
+	</div>
+</div>
 
     </div>
     <div class="row">
@@ -71,6 +75,7 @@
           <label for="typeFilter">
             <select name="tFilter" ng-model="tfilter.type">
               <option value="">
+                All Classes
               </option>
               <option value="comClass">
                 Community Classes
@@ -93,7 +98,7 @@
         <div ng-controller="mainCtrl">
 
 
-          <div ng-repeat="event in events | limitTo:100 | filter:tfilter | orderBy: 'date' | filterPastDates">
+          <div ng-repeat="event in events | filter:tfilter | orderBy: 'date' | filterPastDates">
             <div class="row">
               <div class="col-md-2">
                 <img src="../images/smallLogo.png" alt="" />
@@ -103,7 +108,9 @@
               </div>
               <div class="col-md-5">
                 <h4>{{event.name}}</h4>
+
               </div>
+
             </div>
 
 
@@ -113,28 +120,25 @@
 
 
             <div class="row">
-              <button ng-click="moreInfo = true" ng-hide="moreInfo">+</button>
+              <img class="arrows" src="../images/downArrows.png" ng-click="moreInfo = true" ng-hide="moreInfo">
             </div>
             <div class="row">
               <div class="moreInfo">
                 <div ng-show="moreInfo">
                   <div class="row">
-                    {{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}}
-                  </div>
-                  <div class="row">
-                    {{event.location}}
+                    <h3>{{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}} - {{event.location}}</h3>
                   </div>
                   <div class="row">
                     {{event.description}}
                   </div>
                   <div class="row">
-                    <a href="{{event.website}}">Go to Webpage</a>
+                    <a href="{{event.website}}">Website</a>
                   </div>
 
                 </div>
               </div>
               <div class="row">
-                <button ng-click="moreInfo = false" ng-show="moreInfo">Less Info</button>
+                <img class="arrows" src="../images/upArrows.png" ng-click="moreInfo = false" ng-show="moreInfo">
               </div>
             </div>
           </div>

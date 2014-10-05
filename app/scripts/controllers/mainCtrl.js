@@ -18,6 +18,8 @@ angular.module('zenCityApp')
 
   $scope.events = mainSvc.getEvents();
 
+  $scope.isCollapsed = false;
+
   $scope.scrollTo = function(id) {
     // set the location.hash to the id of
     // the element you wish to scroll to.
