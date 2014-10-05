@@ -45,19 +45,20 @@ body{
         margin-left: -32px;
         border: none;
         margin-bottom: 0px;
+        padding: 0px;
+        :hover{
+          cursor: pointer;
+        }
       }
     }
   }
+
   #headerLogo{
     margin-top: 3%;
   }
   img{
     background-color: transparent;
     border: none;
-    :hover{
-      background-color: transparent;
-      opacity: .5;
-    }
   }
 }
 
@@ -66,7 +67,10 @@ body{
 
 
 //event list
-
+h1{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
 .eventsToday{
   padding: 10px;
   width: 95%;
@@ -103,12 +107,20 @@ body{
       text-align: left;
       padding: 5px;
     }
+    .showDate{
+      text-align: center;
+      margin-top: -30px;
+    }
     .arrows:hover{
       cursor: pointer;
       opacity: .5;
     }
     a{
       color: #8cb0bb;
+    }
+    .description{
+      width: 75%;
+      margin: auto;
     }
   }
 

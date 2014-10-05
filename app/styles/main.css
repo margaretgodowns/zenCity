@@ -32,15 +32,19 @@ body {
         font-size: 1.5em;
         margin-left: -32px;
         border: none;
-        margin-bottom: 0px; }
+        margin-bottom: 0px;
+        padding: 0px; }
+        .header .navMenu ul li :hover {
+          cursor: pointer; }
   .header #headerLogo {
     margin-top: 3%; }
   .header img {
     background-color: transparent;
     border: none; }
-    .header img :hover {
-      background-color: transparent;
-      opacity: 0.5; }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white; }
 
 .eventsToday {
   padding: 10px;
@@ -75,11 +79,17 @@ body {
       margin-top: 40px;
       text-align: left;
       padding: 5px; }
+    .futureEvents .row .showDate {
+      text-align: center;
+      margin-top: -30px; }
     .futureEvents .row .arrows:hover {
       cursor: pointer;
       opacity: 0.5; }
     .futureEvents .row a {
       color: #8cb0bb; }
+    .futureEvents .row .description {
+      width: 75%;
+      margin: auto; }
 
 h2 {
   text-align: center;
