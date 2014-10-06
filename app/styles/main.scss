@@ -22,6 +22,13 @@ body{
   text-align: center;
 }
 
+h3{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}
+
 
 //main.html
 
@@ -35,6 +42,7 @@ body{
   .navMenu{
     text-align: left;
     margin-left: 20px;
+    position: fixed;
     ul{
       list-style-type: none;
       li{
@@ -70,7 +78,16 @@ body{
 h1{
   font-family: 'Open Sans', sans-serif;
   color: white;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2em;
 }
+.eventsBackground{
+  background-color: black;
+}
+#eventsSection{
+  background-color: white;
 .eventsToday{
   padding: 10px;
   width: 95%;
@@ -89,6 +106,7 @@ h1{
     }
   }
 }
+
 .futureEvents{
   padding: 10px;
   width: 95%;
@@ -125,6 +143,7 @@ h1{
   }
 
 }
+}
 h2{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -156,6 +175,12 @@ nav{
 
 
 //submit event
+.submitBackground{
+  background-color: black;
+}
+#submitSection{
+  background-color: white;
+
 form{
   width: 60%;
   margin: auto;
@@ -179,4 +204,5 @@ form{
     margin-top: 15px;
     margin-bottom: 15px;
   }
+}
 }

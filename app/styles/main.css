@@ -16,13 +16,20 @@ body {
 .row {
   text-align: center; }
 
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 2em;
+  font-weight: bold; }
+
 .header {
   height: 700px; }
   .header .backImgs {
     width: 100%; }
   .header .navMenu {
     text-align: left;
-    margin-left: 20px; }
+    margin-left: 20px;
+    position: fixed; }
     .header .navMenu ul {
       list-style-type: none; }
       .header .navMenu ul li {
@@ -44,52 +51,60 @@ body {
 
 h1 {
   font-family: 'Open Sans', sans-serif;
-  color: white; }
+  color: white;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2em; }
 
-.eventsToday {
-  padding: 10px;
-  width: 95%;
-  margin: auto;
-  background-color: white;
-  opacity: 0.7;
-  margin-bottom: 15px; }
-  .eventsToday .row {
-    margin: auto; }
-    .eventsToday .row h4 {
-      font-family: 'Open Sans', sans-serif;
-      color: black;
-      margin-top: 40px;
-      text-align: center;
-      padding: 5px; }
+.eventsBackground {
+  background-color: black; }
 
-.futureEvents {
-  padding: 10px;
-  width: 95%;
-  margin: auto;
-  background-color: white;
-  opacity: 0.7;
-  margin-bottom: 15px;
-  height: 1000px;
-  overflow: scroll; }
-  .futureEvents .row {
-    margin: auto; }
-    .futureEvents .row h4 {
-      font-family: 'Open Sans', sans-serif;
-      color: black;
-      margin-top: 40px;
-      text-align: left;
-      padding: 5px; }
-    .futureEvents .row .showDate {
-      text-align: center;
-      margin-top: -30px; }
-    .futureEvents .row .arrows:hover {
-      cursor: pointer;
-      opacity: 0.5; }
-    .futureEvents .row a {
-      color: #8cb0bb; }
-    .futureEvents .row .description {
-      width: 75%;
+#eventsSection {
+  background-color: white; }
+  #eventsSection .eventsToday {
+    padding: 10px;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    opacity: 0.7;
+    margin-bottom: 15px; }
+    #eventsSection .eventsToday .row {
       margin: auto; }
+      #eventsSection .eventsToday .row h4 {
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        margin-top: 40px;
+        text-align: center;
+        padding: 5px; }
+  #eventsSection .futureEvents {
+    padding: 10px;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    opacity: 0.7;
+    margin-bottom: 15px;
+    height: 1000px;
+    overflow: scroll; }
+    #eventsSection .futureEvents .row {
+      margin: auto; }
+      #eventsSection .futureEvents .row h4 {
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        margin-top: 40px;
+        text-align: left;
+        padding: 5px; }
+      #eventsSection .futureEvents .row .showDate {
+        text-align: center;
+        margin-top: -30px; }
+      #eventsSection .futureEvents .row .arrows:hover {
+        cursor: pointer;
+        opacity: 0.5; }
+      #eventsSection .futureEvents .row a {
+        color: #8cb0bb; }
+      #eventsSection .futureEvents .row .description {
+        width: 75%;
+        margin: auto; }
 
 h2 {
   text-align: center;
@@ -113,23 +128,27 @@ nav {
   .moreInfo button {
     margin-bottom: 10px; }
 
-form {
-  width: 60%;
-  margin: auto; }
+.submitBackground {
+  background-color: black; }
 
-.submitEvent {
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  background-color: white;
-  opacity: 0.7;
-  margin-top: 15px;
-  padding: 10px; }
-  .submitEvent .eventInfo {
+#submitSection {
+  background-color: white; }
+  #submitSection form {
+    width: 60%;
+    margin: auto; }
+  #submitSection .submitEvent {
+    text-align: center;
+    width: 100%;
     margin: auto;
-    width: 41.5%; }
-  .submitEvent input {
-    margin-bottom: 10px; }
-  .submitEvent button {
+    background-color: white;
+    opacity: 0.7;
     margin-top: 15px;
-    margin-bottom: 15px; }
+    padding: 10px; }
+    #submitSection .submitEvent .eventInfo {
+      margin: auto;
+      width: 41.5%; }
+    #submitSection .submitEvent input {
+      margin-bottom: 10px; }
+    #submitSection .submitEvent button {
+      margin-top: 15px;
+      margin-bottom: 15px; }

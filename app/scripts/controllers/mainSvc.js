@@ -14,6 +14,8 @@ angular.module("zenCityApp")
     ref.push(singleEvent);
   };
 
+  
+
   return {
     getEvents: getEvents,
     addEvent: addEvent
