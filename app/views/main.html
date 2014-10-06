@@ -5,15 +5,15 @@
     <div class="row">
 
       <div ng-controller="mainCtrl" class="navMenu">
-	<img src="../images/hamburger.png" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
-	<div collapse="!isCollapsed">
-	<ul>
-	  <li ng-click="scrollTo('eventsSection')" class="well well-lg">Events</li>
-		<li ng-click="scrollTo('submitSection')" class="well well-lg">Submit an Event</li>
-	</ul>
+        <img src="../images/hamburger.png" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
+        <div collapse="!isCollapsed">
+          <ul>
+            <li ng-click="scrollTo('eventsSection')" class="well well-lg">Events</li>
+            <li ng-click="scrollTo('submitSection')" class="well well-lg">Submit an Event</li>
+          </ul>
 
-	</div>
-</div>
+        </div>
+      </div>
 
     </div>
     <div class="row">
@@ -34,47 +34,53 @@
 
   <!-- start events section -->
 
+  <!-- start today section -->
 
-    <div class="row">
-      <div class="eventsBackground">
-      <h1>Events</h1>
+  <div class="row">
+    <div id="todaySection" class="eventsBackground">
+      <h1>Today's Events</h1>
     </div>
-    </div>
-    <div id="eventsSection">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="eventsToday">
-        <div class="row">
-        <h2>Today</h2>
-      </div>
-      <div class="row">
-        <div ng-controller="mainCtrl">
-          <div ng-repeat="event in events | eventDateFilter | orderBy: 'date'">
+  </div>
 
+<div class="eventsToday">
+  <div class="row">
+
+      <div ng-controller="mainCtrl">
+        <div ng-repeat="event in events | eventDateFilter | orderBy: 'date' | limitTo:3">
+
+
+          <div class="col-md-3 todayRepeat">
             <div class="row">
-              <h4>{{event.name}}</h4>
+            <h3>{{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}}</h4>
             </div>
             <div class="row">
-              {{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}}
+              <h4>{{ event.name}}</h4>
             </div>
             <div class="row">
-              {{event.location}}
+              <h4>{{event.location}}<h4>
+              </div>
+              <div class="row">
+                <h4>{{event.description}}</h4>
+              </div>
+              <div class="row">
+                <a href="{{event.website}}">Go to Webpage</a>
+              </div>
+              </div>
             </div>
-            <div class="row">
-              {{event.description}}
-            </div>
-            <div class="row">
-              <a href="{{event.website}}">Go to Webpage</a>
+            <div class="col-md-3 weeklyEventsLink">
+              <img src="../images/smallLogo.png" alt="" />
+              <h3>Click Here <br> for <br> Weekly Events</h3>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
-      </div>
-      <div class="col-md-6">
+
+      <!-- end today section -->
+      <!-- start future events section -->
+
+      <div class="row">
         <div class="futureEvents">
-        <div class="row">
+
 
           <h2>Coming Up</h2>
         </div>
@@ -103,7 +109,7 @@
         </div>
 
 
-        <!-- event list -->
+
         <div ng-controller="mainCtrl">
 
 
@@ -139,8 +145,8 @@
                   </div>
                   <div class="row">
                     <div class="description">
-                    {{event.description}}
-                  </div>
+                      {{event.description}}
+                    </div>
                   </div>
                   <div class="row">
                     <a href="{{event.website}}">Website</a>
@@ -155,56 +161,56 @@
           </div>
         </div>
       </div>
+
+
+
+
+      <!-- end future events section -->
+
+
+
+
+
+      <!-- event submission form -->
+      <div class="row">
+        <div class="submitBackground">
+          <h1>Submit an Event</h1>
+        </div>
+      </div>
+      <div class="submitEvent" id="submitSection">
+
+
+        <form ng-submit="addSingleEvent(singleEvent)" class="form-inline">
+          <input ng-model="singleEvent.name" class="form-control" type="text" placeholder="Event Name">
+          <input type="date" ng-model="singleEvent.date" class="form-control">
+          <input ng-model="singleEvent.time" class="form-control" type="time" placeholder="Time">
+          <input ng-model="singleEvent.location" class="form-control" type="text" placeholder="Location">
+          <input ng-model="singleEvent.yourName" class="form-control" type="text" placeholder="Your Name">
+          <input ng-model="singleEvent.yourEmail" class="form-control" type="text" placeholder="Your Email">
+          <input ng-model="singleEvent.studio" class="form-control" type="text" placeholder="Studio/Organization">
+          <input type="url" ng-model="singleEvent.website" class="form-control" type="text" placeholder="Website">
+          <textarea ng-model="singleEvent.description" class="form-control" rows="3" placeholder="Event Description"></textarea>
+
+          <h4>Event Type</h4>
+          <label class="radio-inline">
+            <input ng-model="singleEvent.type" name="eventType" type="radio" value="comClass">Community Class
+          </label>
+          <label class="radio-inline">
+            <input ng-model="singleEvent.type" name="eventType" type="radio" value="workshop">Workshop
+          </label>
+          <label class="radio-inline">
+            <input ng-model="singleEvent.type" name="eventType" type="radio" value="teacherTrain">Teacher Training
+          </label>
+          <label class="radio-inline">
+            <input ng-model="singleEvent.type" name="eventType" type="radio" value="justForFun">Just for Fun
+          </label>
+          <br>
+          <button type="submit" name="button">Submit</button>
+        </form>
+
+      </div>
+
+
+
+
     </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<!-- event submission form -->
-<div class="row">
-<div class="submitBackground">
-  <h1>Submit an Event</h1>
-</div>
-</div>
-<div class="submitEvent" id="submitSection">
-
-
-  <form ng-submit="addSingleEvent(singleEvent)" class="form-inline">
-    <input ng-model="singleEvent.name" class="form-control" type="text" placeholder="Event Name">
-    <input type="date" ng-model="singleEvent.date" class="form-control">
-    <input ng-model="singleEvent.time" class="form-control" type="time" placeholder="Time">
-    <input ng-model="singleEvent.location" class="form-control" type="text" placeholder="Location">
-    <input ng-model="singleEvent.yourName" class="form-control" type="text" placeholder="Your Name">
-    <input ng-model="singleEvent.yourEmail" class="form-control" type="text" placeholder="Your Email">
-    <input ng-model="singleEvent.studio" class="form-control" type="text" placeholder="Studio/Organization">
-    <input type="url" ng-model="singleEvent.website" class="form-control" type="text" placeholder="Website">
-    <textarea ng-model="singleEvent.description" class="form-control" rows="3" placeholder="Event Description"></textarea>
-
-    <h4>Event Type</h4>
-    <label class="radio-inline">
-      <input ng-model="singleEvent.type" name="eventType" type="radio" value="comClass">Community Class
-    </label>
-    <label class="radio-inline">
-      <input ng-model="singleEvent.type" name="eventType" type="radio" value="workshop">Workshop
-    </label>
-    <label class="radio-inline">
-      <input ng-model="singleEvent.type" name="eventType" type="radio" value="teacherTrain">Teacher Training
-    </label>
-    <label class="radio-inline">
-      <input ng-model="singleEvent.type" name="eventType" type="radio" value="justForFun">Just for Fun
-    </label>
-    <br>
-    <button type="submit" name="button">Submit</button>
-  </form>
-
-</div>
-
-
-
-
-</div>

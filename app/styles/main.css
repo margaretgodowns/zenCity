@@ -14,13 +14,19 @@ body {
   padding: 0px; }
 
 .row {
-  text-align: center; }
+  text-align: center;
+  margin: auto; }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
   color: black;
   font-size: 2em;
   font-weight: bold; }
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 1.5em; }
 
 .header {
   height: 700px; }
@@ -62,49 +68,54 @@ h1 {
 
 #eventsSection {
   background-color: white; }
-  #eventsSection .eventsToday {
-    padding: 10px;
-    width: 95%;
-    margin: auto;
-    background-color: white;
-    opacity: 0.7;
-    margin-bottom: 15px; }
-    #eventsSection .eventsToday .row {
-      margin: auto; }
-      #eventsSection .eventsToday .row h4 {
-        font-family: 'Open Sans', sans-serif;
-        color: black;
-        margin-top: 40px;
-        text-align: center;
-        padding: 5px; }
-  #eventsSection .futureEvents {
-    padding: 10px;
-    width: 95%;
-    margin: auto;
-    background-color: white;
-    opacity: 0.7;
-    margin-bottom: 15px;
-    height: 1000px;
+
+.eventsToday {
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  opacity: 0.7;
+  margin-bottom: 15px; }
+  .eventsToday .todayRepeat {
+    border-right: 2px solid #8cb0bb;
+    height: 300px;
     overflow: scroll; }
-    #eventsSection .futureEvents .row {
+  .eventsToday a {
+    color: #8cb0bb; }
+  .eventsToday .weeklyEventsLink {
+    margin-top: 20px; }
+    .eventsToday .weeklyEventsLink :hover {
+      opacity: 0.5;
+      cursor: pointer; }
+
+.futureEvents {
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  opacity: 0.7;
+  margin-bottom: 15px;
+  height: 1000px;
+  overflow: scroll; }
+  .futureEvents .row {
+    margin: auto; }
+    .futureEvents .row h4 {
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      margin-top: 40px;
+      text-align: left;
+      padding: 5px; }
+    .futureEvents .row .showDate {
+      text-align: center;
+      margin-top: -30px; }
+    .futureEvents .row .arrows:hover {
+      cursor: pointer;
+      opacity: 0.5; }
+    .futureEvents .row a {
+      color: #8cb0bb; }
+    .futureEvents .row .description {
+      width: 75%;
       margin: auto; }
-      #eventsSection .futureEvents .row h4 {
-        font-family: 'Open Sans', sans-serif;
-        color: black;
-        margin-top: 40px;
-        text-align: left;
-        padding: 5px; }
-      #eventsSection .futureEvents .row .showDate {
-        text-align: center;
-        margin-top: -30px; }
-      #eventsSection .futureEvents .row .arrows:hover {
-        cursor: pointer;
-        opacity: 0.5; }
-      #eventsSection .futureEvents .row a {
-        color: #8cb0bb; }
-      #eventsSection .futureEvents .row .description {
-        width: 75%;
-        margin: auto; }
 
 h2 {
   text-align: center;
