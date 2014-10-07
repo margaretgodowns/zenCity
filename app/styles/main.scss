@@ -24,10 +24,9 @@ body{
 }
 
 h3{
-  font-family: 'Open Sans', sans-serif;
-  color: black;
+  font-family: 'Courier New', courier;
+  color: #df5720;
   font-size: 2em;
-  font-weight: bold;
 }
 
 h4{
@@ -82,8 +81,11 @@ h4{
 
 
 //event list
+
 h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Courier sans-serif', courier;
+  text-align: left;
+  margin-left: 20px;
   color: white;
   margin: 0px;
   padding-top: 20px;
@@ -91,18 +93,24 @@ h1{
   font-size: 2em;
 }
 .eventsBackground{
-  background-color: black;
+  background-color: #df5720;
+  opacity: .6;
+  padding: 20px;
 }
 #eventsSection{
   background-color: white;
 }
+#todaySection{
+  width: 85%;
+  margin: auto;
+}
 .eventsToday{
   padding: 10px;
-  width: 100%;
+  width: 85%;
   margin: auto;
   background-color: white;
   opacity: .7;
-  margin-bottom: 15px;
+  margin-bottom: 60px;
   .todayRepeat{
     border-right: 2px solid #8cb0bb;
     height: 300px;
@@ -121,13 +129,16 @@ h1{
 }
 
 
+.moreEvents{
+  margin-bottom: 60px;
+  margin: auto;
+  width: 85%;
 .futureEvents{
   padding: 10px;
   width: 100%;
   margin: auto;
   background-color: white;
   opacity: .7;
-  margin-bottom: 15px;
   height: 1000px;
   overflow: scroll;
 
@@ -163,7 +174,6 @@ h1{
   margin: auto;
   background-color: #8cb0bb;
   opacity: .7;
-  margin-bottom: 15px;
   height: 1000px;
   overflow: scroll;
   h1{
@@ -171,6 +181,8 @@ h1{
         font-size: 2.5em;
       }
 }
+}
+
 .col-md-8{
   padding: 0px;
   border-right: 2px solid black;
@@ -222,7 +234,7 @@ nav{
   }
   .submitEvent{
     text-align: center;
-    width: 100%;
+    width: 85%;
     margin: auto;
     background-color: white;
     opacity: .7;

@@ -1,13 +1,14 @@
 <div class="container">
 
   <!-- header -->
-  <div class="header">
+  <div class="header" id="homeSection">
     <div class="row">
 
       <div ng-controller="mainCtrl" class="navMenu">
         <img src="../images/hamburger.png" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
         <div collapse="!isCollapsed">
           <ul>
+            <li class="well well-lg homeNav">Home</li>
             <li class="well well-lg todaysEventsNav">Today</li>
             <li class="well well-lg futureEventsNav">Upcoming Events</li>
           </ul>
@@ -38,7 +39,7 @@
 
   <div class="row">
     <div id="todaySection" class="eventsBackground">
-      <h1>Today's Events</h1>
+      <h1 class="titles">Today's Events</h1>
     </div>
   </div>
 
@@ -46,7 +47,7 @@
     <div class="row">
 
       <div ng-controller="mainCtrl">
-        <div ng-repeat="event in events | eventDateFilter | orderBy: 'datetime' | limitTo: 3">
+        <div ng-repeat="event in events | eventDateFilter | orderBy: 'time' | limitTo:3">
 
 
           <div class="col-md-3 todayRepeat">
@@ -83,12 +84,15 @@
 
 <!-- column of future events -->
 <div class="row">
+<div class="moreEvents">
+
+
   <div id="futureEventsSection" class="eventsBackground">
     <h1>More Events</h1>
   </div>
-</div>
+
 <div class="row">
-  <div class="moreEvents">
+
 
 
         <div class="col-md-8">
@@ -216,7 +220,9 @@
       </div>
       </div>
     </div>
-    </div>
+  </div>
+  </div>
+
 
       <!-- end weekly events section -->
 

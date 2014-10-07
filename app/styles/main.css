@@ -18,10 +18,9 @@ body {
   margin: auto; }
 
 h3 {
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  font-size: 2em;
-  font-weight: bold; }
+  font-family: 'Courier New', courier;
+  color: #df5720;
+  font-size: 2em; }
 
 h4 {
   font-family: 'Open Sans', sans-serif;
@@ -56,7 +55,9 @@ h4 {
     border: none; }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Courier sans-serif', courier;
+  text-align: left;
+  margin-left: 20px;
   color: white;
   margin: 0px;
   padding-top: 20px;
@@ -64,18 +65,24 @@ h1 {
   font-size: 2em; }
 
 .eventsBackground {
-  background-color: black; }
+  background-color: #df5720;
+  opacity: 0.6;
+  padding: 20px; }
 
 #eventsSection {
   background-color: white; }
 
+#todaySection {
+  width: 85%;
+  margin: auto; }
+
 .eventsToday {
   padding: 10px;
-  width: 100%;
+  width: 85%;
   margin: auto;
   background-color: white;
   opacity: 0.7;
-  margin-bottom: 15px; }
+  margin-bottom: 60px; }
   .eventsToday .todayRepeat {
     border-right: 2px solid #8cb0bb;
     height: 300px;
@@ -88,45 +95,46 @@ h1 {
       opacity: 0.5;
       cursor: pointer; }
 
-.futureEvents {
-  padding: 10px;
-  width: 100%;
+.moreEvents {
+  margin-bottom: 60px;
   margin: auto;
-  background-color: white;
-  opacity: 0.7;
-  margin-bottom: 15px;
-  height: 1000px;
-  overflow: scroll; }
-  .futureEvents h4 {
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    margin-top: 40px;
-    text-align: left;
-    padding: 5px; }
-  .futureEvents .showDate {
-    text-align: center;
-    margin-top: -30px; }
-  .futureEvents .arrows:hover {
-    cursor: pointer;
-    opacity: 0.5; }
-  .futureEvents a {
-    color: #8cb0bb; }
-  .futureEvents .description {
-    width: 75%;
-    margin: auto; }
-
-.weeklyEvents {
-  padding: 10px;
-  width: 100%;
-  margin: auto;
-  background-color: #8cb0bb;
-  opacity: 0.7;
-  margin-bottom: 15px;
-  height: 1000px;
-  overflow: scroll; }
-  .weeklyEvents h1 {
-    text-align: left;
-    font-size: 2.5em; }
+  width: 85%; }
+  .moreEvents .futureEvents {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    opacity: 0.7;
+    height: 1000px;
+    overflow: scroll; }
+    .moreEvents .futureEvents h4 {
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      margin-top: 40px;
+      text-align: left;
+      padding: 5px; }
+    .moreEvents .futureEvents .showDate {
+      text-align: center;
+      margin-top: -30px; }
+    .moreEvents .futureEvents .arrows:hover {
+      cursor: pointer;
+      opacity: 0.5; }
+    .moreEvents .futureEvents a {
+      color: #8cb0bb; }
+    .moreEvents .futureEvents .description {
+      width: 75%;
+      margin: auto; }
+  .moreEvents .weeklyEvents {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    background-color: #8cb0bb;
+    opacity: 0.7;
+    height: 1000px;
+    overflow: scroll; }
+    .moreEvents .weeklyEvents h1 {
+      text-align: left;
+      font-size: 2.5em; }
 
 .col-md-8 {
   padding: 0px;
@@ -167,7 +175,7 @@ nav {
     margin: auto; }
   #submitSection .submitEvent {
     text-align: center;
-    width: 100%;
+    width: 85%;
     margin: auto;
     background-color: white;
     opacity: 0.7;
