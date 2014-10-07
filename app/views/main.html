@@ -42,29 +42,29 @@
     </div>
   </div>
 
-<div class="eventsToday">
-  <div class="row">
+  <div class="eventsToday">
+    <div class="row">
 
       <div ng-controller="mainCtrl">
-        <div ng-repeat="event in events | eventDateFilter | orderBy: 'date' | limitTo:3">
+        <div ng-repeat="event in events | eventDateFilter | orderBy: 'date' | limitTo: 3">
 
 
           <div class="col-md-3 todayRepeat">
             <div class="row">
-            <h3>{{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}}</h4>
-            </div>
-            <div class="row">
-              <h4>{{ event.name}}</h4>
-            </div>
-            <div class="row">
-              <h4>{{event.location}}<h4>
+              <h3>{{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}}</h4>
               </div>
               <div class="row">
-                <h4>{{event.description}}</h4>
+                <h4>{{ event.name}}</h4>
               </div>
               <div class="row">
-                <a href="{{event.website}}">Go to Webpage</a>
-              </div>
+                <h4>{{event.location}}<h4>
+                </div>
+                <div class="row">
+                  <h4>{{event.description}}</h4>
+                </div>
+                <div class="row">
+                  <a href="{{event.website}}">Go to Webpage</a>
+                </div>
               </div>
             </div>
             <div class="col-md-3 weeklyEventsLink">
@@ -78,12 +78,25 @@
       <!-- end today section -->
       <!-- start future events section -->
 
-      <div class="row">
-        <div class="futureEvents">
+
+
+
+<!-- column of future events -->
+<div class="row">
+  <div id="futureEventsSection" class="eventsBackground">
+    <h1>More Events</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="moreEvents">
+
+
+        <div class="col-md-8">
+          <div class="futureEvents">
 
 
           <h2>Coming Up</h2>
-        </div>
+
 
         <!-- event filter by type -->
         <div class="row">
@@ -109,7 +122,7 @@
         </div>
 
 
-
+<!-- event list before moreInfo -->
         <div ng-controller="mainCtrl">
 
 
@@ -132,7 +145,7 @@
 
 
 
-
+<!-- event list expanded -->
 
             <div class="row">
               <img class="arrows" src="../images/downArrows.png" ng-click="moreInfo = true" ng-hide="moreInfo">
@@ -161,8 +174,51 @@
           </div>
         </div>
       </div>
+      </div>
+
+      <!-- start weekly events section -->
+
+      <div class="col-md-4">
+        <div class="weeklyEvents">
 
 
+        <h2>Weekly</h2>
+        <div class="dayOfWeek">
+        <div class="row">
+          <h4>Mondays</h4>
+        </div>
+        <div class="row">
+          <h3>6PM</h3>
+        </div>
+        <div class="row">
+
+        </div>
+        </div>
+        <div class="row">
+          <h4>Tuesdays</h4>
+        </div>
+        <div class="row">
+          <h4>Wednesdays</h4>
+        </div>
+        <div class="row">
+          <h4>Thursdays</h4>
+        </div>
+        <div class="row">
+          <h4>Fridays</h4>
+        </div>
+        <div class="row">
+          <h4>Saturdays</h4>
+        </div>
+        <div class="row">
+          <h4>Sundays</h4>
+        </div>
+
+      </div>
+      </div>
+    </div>
+    </div>
+
+      <!-- end weekly events section -->
 
 
       <!-- end future events section -->

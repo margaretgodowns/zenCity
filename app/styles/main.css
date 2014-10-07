@@ -97,25 +97,43 @@ h1 {
   margin-bottom: 15px;
   height: 1000px;
   overflow: scroll; }
-  .futureEvents .row {
+  .futureEvents h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    margin-top: 40px;
+    text-align: left;
+    padding: 5px; }
+  .futureEvents .showDate {
+    text-align: center;
+    margin-top: -30px; }
+  .futureEvents .arrows:hover {
+    cursor: pointer;
+    opacity: 0.5; }
+  .futureEvents a {
+    color: #8cb0bb; }
+  .futureEvents .description {
+    width: 75%;
     margin: auto; }
-    .futureEvents .row h4 {
-      font-family: 'Open Sans', sans-serif;
-      color: black;
-      margin-top: 40px;
-      text-align: left;
-      padding: 5px; }
-    .futureEvents .row .showDate {
-      text-align: center;
-      margin-top: -30px; }
-    .futureEvents .row .arrows:hover {
-      cursor: pointer;
-      opacity: 0.5; }
-    .futureEvents .row a {
-      color: #8cb0bb; }
-    .futureEvents .row .description {
-      width: 75%;
-      margin: auto; }
+
+.weeklyEvents {
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  opacity: 0.5;
+  margin-bottom: 15px;
+  height: 1000px;
+  overflow: scroll; }
+  .weeklyEvents h1 {
+    text-align: left;
+    font-size: 2.5em; }
+
+.col-md-8 {
+  padding: 0px;
+  border-right: 6px solid #8cb0bb; }
+
+.col-md-4 {
+  padding: 0px; }
 
 h2 {
   text-align: center;

@@ -113,11 +113,11 @@ h1{
   }
   .weeklyEventsLink{
     margin-top: 20px;
-  :hover{
-    opacity: .5;
-    cursor: pointer;
+    :hover{
+      opacity: .5;
+      cursor: pointer;
+    }
   }
-}
 }
 
 
@@ -130,8 +130,7 @@ h1{
   margin-bottom: 15px;
   height: 1000px;
   overflow: scroll;
-  .row{
-    margin: auto;
+
     h4{
       font-family: 'Open Sans', sans-serif;
       color: black;
@@ -154,8 +153,30 @@ h1{
       width: 75%;
       margin: auto;
     }
-  }
 
+
+}
+
+.weeklyEvents{
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  opacity: .5;
+  margin-bottom: 15px;
+  height: 1000px;
+  overflow: scroll;
+  h1{
+        text-align: left;
+        font-size: 2.5em;
+      }
+}
+.col-md-8{
+  padding: 0px;
+  border-right: 6px solid #8cb0bb;
+}
+.col-md-4{
+  padding: 0px;
 }
 
 h2{
@@ -195,28 +216,28 @@ nav{
 #submitSection{
   background-color: white;
 
-form{
-  width: 60%;
-  margin: auto;
-}
-.submitEvent{
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  background-color: white;
-  opacity: .7;
-  margin-top: 15px;
-  padding: 10px;
-  .eventInfo{
+  form{
+    width: 60%;
     margin: auto;
-    width: 41.5%;
   }
-  input{
-    margin-bottom: 10px;
-  }
-  button{
+  .submitEvent{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    opacity: .7;
     margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 10px;
+    .eventInfo{
+      margin: auto;
+      width: 41.5%;
+    }
+    input{
+      margin-bottom: 10px;
+    }
+    button{
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
-}
 }
