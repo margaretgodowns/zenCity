@@ -8,8 +8,8 @@
         <img src="../images/hamburger.png" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
         <div collapse="!isCollapsed">
           <ul>
-            <li ng-click="scrollTo('eventsSection')" class="well well-lg">Events</li>
-            <li ng-click="scrollTo('submitSection')" class="well well-lg">Submit an Event</li>
+            <li class="well well-lg todaysEventsNav">Today</li>
+            <li class="well well-lg futureEventsNav">Upcoming Events</li>
           </ul>
 
         </div>
@@ -46,7 +46,7 @@
     <div class="row">
 
       <div ng-controller="mainCtrl">
-        <div ng-repeat="event in events | eventDateFilter | orderBy: 'date' | limitTo: 3">
+        <div ng-repeat="event in events | eventDateFilter | orderBy: 'datetime' | limitTo: 3">
 
 
           <div class="col-md-3 todayRepeat">
@@ -126,7 +126,7 @@
         <div ng-controller="mainCtrl">
 
 
-          <div ng-repeat="event in events | filter:tfilter | orderBy: 'date' | filterPastDates">
+          <div ng-repeat="event in events | filter:tfilter | orderBy: 'datetime' | filterPastDates">
             <div class="row">
               <div class="col-md-2">
                 <img src="../images/smallLogo.png" alt="" />

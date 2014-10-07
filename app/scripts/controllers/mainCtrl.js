@@ -20,14 +20,24 @@ angular.module('zenCityApp')
 
   $scope.isCollapsed = false;
 
-  $scope.scrollTo = function(id) {
-    // set the location.hash to the id of
-    // the element you wish to scroll to.
-    $location.hash(id);
+  $(".todaysEventsNav").click(function() {
+      $('body').animate({
+          scrollTop: $("#todaySection").offset().top
+              }, 500);
+          });
 
-    // call $anchorScroll()
-    $anchorScroll();
-  };
+  $(".futureEventsNav").click(function() {
+      $('body').animate({
+          scrollTop: $("#futureEventsSection").offset().top
+              }, 500);
+          });
+
+  $(".weeklyEventsLink").click(function() {
+      $('body').animate({
+          scrollTop: $("#futureEventsSection").offset().top
+              }, 500);
+          });
+
 
 
   $scope.combine = function(date,time) {
