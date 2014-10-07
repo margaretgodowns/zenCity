@@ -135,10 +135,22 @@ h1 {
     .moreEvents .weeklyEvents h1 {
       text-align: left;
       font-size: 2.5em; }
+    .moreEvents .weeklyEvents h3 {
+      text-align: left;
+      line-height: 2px; }
+    .moreEvents .weeklyEvents h4 {
+      color: white;
+      font-size: 1.5em;
+      text-align: left;
+      font-weight: bold; }
+    .moreEvents .weeklyEvents a {
+      color: white; }
+
+.weekClick:hover {
+  background-color: #df5720; }
 
 .col-md-8 {
-  padding: 0px;
-  border-right: 2px solid black; }
+  padding: 0px; }
 
 .col-md-4 {
   padding: 0px; }
