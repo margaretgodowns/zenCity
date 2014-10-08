@@ -1,3 +1,9 @@
+//variables
+$font-stack-a: 'Open Sans', sans-serif;
+$font-stack-b: 'Courier New', courier;
+$orange: #df5720;
+$teal: #8cb0bb;
+
 //general styles
 
 body{
@@ -24,19 +30,19 @@ body{
 }
 
 h3{
-  font-family: 'Courier New', courier;
-  color: #df5720;
+  font-family: $font-stack-b;
+  color: $orange;
   font-size: 2em;
 }
 
 h4{
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-stack-a;
   color: black;
   font-size: 1.5em;
 }
 
 h5{
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-stack-a;
   color: white;
   font-weight: bolder;
   font-size: 1.2em;
@@ -65,7 +71,7 @@ h5{
       list-style-type: none;
       li{
         background: transparent;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font-stack-a;
         color: white;
         font-size: 1.5em;
         margin-left: -32px;
@@ -96,7 +102,7 @@ h5{
 //event list
 
 h1{
-  font-family: 'Courier sans-serif', courier;
+  font-family: $font-stack-b;
   text-align: left;
   margin-left: 20px;
   color: white;
@@ -106,7 +112,7 @@ h1{
   font-size: 2em;
 }
 .eventsBackground{
-  background-color: #df5720;
+  background-color: $orange;
   opacity: .6;
   padding: 20px;
 }
@@ -126,12 +132,12 @@ h1{
   opacity: .7;
   margin-bottom: 240px;
   .todayRepeat{
-    border-right: 2px solid #8cb0bb;
+    border-right: 2px solid $teal;
     height: 300px;
     overflow: scroll;
   }
   a{
-    color: #8cb0bb
+    color:$teal
   }
   .weeklyEventsLink{
     margin-top: 20px;
@@ -157,7 +163,7 @@ h1{
   overflow: scroll;
 
     h4{
-      font-family: 'Open Sans', sans-serif;
+      font-family: $font-stack-a;
       color: black;
       margin-top: 40px;
       text-align: left;
@@ -172,7 +178,7 @@ h1{
       opacity: .5;
     }
     a{
-      color: #df5720;
+      color: $orange;
     }
     .description{
       width: 75%;
@@ -186,7 +192,7 @@ h1{
   padding: 10px;
   width: 100%;
   margin: auto;
-  background-color: #8cb0bb;
+  background-color:$teal;
   opacity: .7;
   height: 1000px;
   overflow: scroll;
@@ -210,7 +216,7 @@ h1{
 }
 }
 .weekClick:hover{
-  background-color: #df5720;
+  background-color: $orange;
 }
 
 .col-md-8{
@@ -222,7 +228,7 @@ h1{
 
 h2{
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-stack-a;
   color: black;
 }
 nav{
@@ -231,7 +237,7 @@ nav{
     list-style-type: none;
     li{
       display: inline-block;
-      font-family: 'Open Sans', sans-serif;
+      font-family: $font-stack-a;
       a{
         color: black;
       }
@@ -260,7 +266,7 @@ nav{
 }
 
 .submitBackground{
-  background-color: #df5720;
+  background-color: $orange;
   opacity: .6;
   padding: 20px;
 }
@@ -286,7 +292,7 @@ nav{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #df5720;
+    background-color: $orange;
     opacity: .6;
     h3{
       color: white;
