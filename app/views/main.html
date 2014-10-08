@@ -11,6 +11,7 @@
             <li class="well well-lg homeNav">Home</li>
             <li class="well well-lg todaysEventsNav">Today</li>
             <li class="well well-lg futureEventsNav">Upcoming Events</li>
+            <li class="well well-lg submitNav">Submit an Event</li>
           </ul>
 
         </div>
@@ -64,7 +65,7 @@
                   <h4>{{event.description}}</h4>
                 </div>
                 <div class="row">
-                  <a href="{{event.website}}">Go to Webpage</a>
+                  <a href="{{event.website}}" target="_blank">Go to Webpage</a>
                 </div>
               </div>
             </div>
@@ -130,7 +131,7 @@
                 <div ng-controller="mainCtrl">
 
 
-                  <div ng-repeat="event in events | filter:tfilter | orderBy: 'datetime' | filterPastDates">
+                  <div ng-repeat="event in events | filter:tfilter | orderBy: 'date' | filterPastDates">
                     <div class="row">
                       <div class="col-md-2">
                         <img src="../images/smallLogo.png" alt="" />
@@ -301,10 +302,12 @@
 
 
   <!-- event submission form -->
-  <div class="footer">
-  <div class="row">
 
-    <div class="col-md-4">
+
+
+
+
+<div class="submit">
 
 
     <div class="row">
@@ -312,20 +315,22 @@
         <h1>Submit an Event</h1>
       </div>
     </div>
+    <div class="row">
     <div class="submitEvent" id="submitSection">
 
 
       <form ng-submit="addSingleEvent(singleEvent)" class="form-inline">
         <input ng-model="singleEvent.name" class="form-control" type="text" placeholder="Event Name">
         <input type="date" ng-model="singleEvent.date" class="form-control">
+        <br>
+
         <input ng-model="singleEvent.time" class="form-control" type="time" placeholder="Time">
         <input ng-model="singleEvent.location" class="form-control" type="text" placeholder="Location">
-        <!-- <input ng-model="singleEvent.yourName" class="form-control" type="text" placeholder="Your Name">
-        <input ng-model="singleEvent.yourEmail" class="form-control" type="text" placeholder="Your Email">
-        <input ng-model="singleEvent.studio" class="form-control" type="text" placeholder="Studio/Organization"> -->
+        <br>
         <input type="url" ng-model="singleEvent.website" class="form-control" type="text" placeholder="Website">
-        <textarea ng-model="singleEvent.description" class="form-control" rows="3" placeholder="Event Description"></textarea>
-
+        <br>
+        <textarea ng-model="singleEvent.description" class="form-control" rows="5" cols="40" placeholder="Event Description"></textarea>
+<br>
         <label class="radio-inline">
           <input ng-model="singleEvent.type" name="eventType" type="radio" value="comClass">Community
         </label>
@@ -343,13 +348,15 @@
       </form>
 
     </div>
-
-
-</div>
-<div class="col-md-4">
+  </div>
 
 </div>
-<div class="col-md-4">
+
+
+
+
+
+
   <div class="row">
     <div class="submitBackground">
       <h1>Contact</h1>
@@ -381,7 +388,7 @@
       </div>
     </div>
   </div>
-</div>
-</div>
-</div>
+
+
+
 </div>

@@ -21,28 +21,34 @@ angular.module('zenCityApp')
   $scope.isCollapsed = false;
 
   $(".homeNav").click(function() {
-      $('body').animate({
-          scrollTop: $("#homeSection").offset().top
-        }, 800);
-          });
+    $('body').animate({
+      scrollTop: $("#homeSection").offset().top
+    }, 800);
+  });
 
   $(".todaysEventsNav").click(function() {
-      $('body').animate({
-          scrollTop: $("#todaySection").offset().top
-        }, 800);
-          });
+    $('body').animate({
+      scrollTop: $("#todaySection").offset().top
+    }, 800);
+  });
 
   $(".futureEventsNav").click(function() {
-      $('body').animate({
-          scrollTop: $("#futureEventsSection").offset().top
-        }, 800);
-          });
+    $('body').animate({
+      scrollTop: $("#futureEventsSection").offset().top
+    }, 800);
+  });
 
   $(".weeklyEventsLink").click(function() {
-      $('body').animate({
-          scrollTop: $("#futureEventsSection").offset().top
-        }, 800);
-          });
+    $('body').animate({
+      scrollTop: $("#futureEventsSection").offset().top
+    }, 800);
+  });
+
+  $(".submitNav").click(function() {
+    $('body').animate({
+      scrollTop: $("#submitSection").offset().top
+    }, 800);
+  });
 
 
 
