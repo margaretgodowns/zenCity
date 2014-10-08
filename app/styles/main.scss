@@ -35,6 +35,16 @@ h4{
   font-size: 1.5em;
 }
 
+h5{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
 
 //main.html
 
@@ -50,6 +60,7 @@ h4{
     margin-left: 20px;
     margin-top: 20px;
     position: fixed;
+    z-index: 100;
     ul{
       list-style-type: none;
       li{
@@ -242,10 +253,10 @@ nav{
 //submit event
 
 .submit{
-  width: 85%;
+  width: 50%;
   margin: auto;
   margin-top: 240px;
-  margin-bottom: 240px;
+  margin-bottom: 300px;
 }
 
 .submitBackground{
@@ -275,6 +286,18 @@ nav{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #df5720;
+    opacity: .6;
+    h3{
+      color: white;
+    }
+    img{
+      margin-bottom: 20px;
+    }
+    img:hover{
+        opacity: .5;
+        cursor: pointer;
+      }
   }
     .eventInfo{
       margin: auto;
@@ -282,9 +305,6 @@ nav{
     }
     #emailForm{
       width: 90%;
-    }
-    .emailInput{
-      margin: 35px;
     }
     input{
       margin-bottom: 10px;

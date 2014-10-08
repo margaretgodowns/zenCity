@@ -12,6 +12,7 @@
             <li class="well well-lg todaysEventsNav">Today</li>
             <li class="well well-lg futureEventsNav">Upcoming Events</li>
             <li class="well well-lg submitNav">Submit an Event</li>
+            <li class="well well-lg contactNav">Contact Us</li>
           </ul>
 
         </div>
@@ -307,7 +308,7 @@
 
 
 
-<div class="submit">
+<div class="submit" id="submitSection">
 
 
     <div class="row">
@@ -316,7 +317,7 @@
       </div>
     </div>
     <div class="row">
-    <div class="submitEvent" id="submitSection">
+    <div class="submitEvent">
 
 
       <form ng-submit="addSingleEvent(singleEvent)" class="form-inline">
@@ -357,38 +358,38 @@
 
 
 
-  <div class="row">
-    <div class="submitBackground">
-      <h1>Contact</h1>
-    </div>
-  </div>
-  <div class="submitEvent">
+
+  <div class="footer" id="contact">
     <div class="row">
-      <h4 class="emailInput">
+
+
+    <div class="col-md-4">
+<h3>About Zen City</h3>
+<h5>
+Charleston, SC has become a mecca for yoga. Zen City does the leg work to find all the happenings in the yoga community and list them for you in one spot so you'll never miss another downward-facing dog. So you can get back to doing what's important - practicing in the Holy City.
+</h5>
+    </div>
+    <div class="col-md-4">
+      <img src="../images/footerLogo.png" alt="" />
+    </div>
+    <div class="col-md-4">
+      <h3>Contact Us</h3>
+      <h5>
       Sign up for Zen City Alerts
-    </h4>
-    </div>
-    <div class="row">
+    </h5>
       <form action="index.html" method="post">
         <input class="form-control" id="emailForm" type="text" name="some_name" value="" placeholder="enter email">
       </form>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
+      <div class="row">
         <img src="../images/emailIcon.png" alt="" />
-      </div>
-      <div class="col-md-3">
         <img src="../images/facebookIcon.png" alt="" />
-      </div>
-      <div class="col-md-3">
         <img src="../images/instaIcon.png" alt="" />
-      </div>
-      <div class="col-md-3">
         <img src="../images/twitterIcon.png" alt="" />
       </div>
     </div>
   </div>
 
+</div>
 
 
 </div>

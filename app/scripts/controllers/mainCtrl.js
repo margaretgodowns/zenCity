@@ -50,6 +50,11 @@ angular.module('zenCityApp')
     }, 800);
   });
 
+  $(".contactNav").click(function() {
+    $('body').animate({
+      scrollTop: $("#contact").offset().top
+    }, 800);
+  });
 
 
   $scope.combine = function(date,time) {

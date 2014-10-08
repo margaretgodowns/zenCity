@@ -27,6 +27,15 @@ h4 {
   color: black;
   font-size: 1.5em; }
 
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin: auto;
+  width: 70%;
+  text-align: center; }
+
 .header {
   height: 700px; }
   .header .backImgs {
@@ -35,7 +44,8 @@ h4 {
     text-align: left;
     margin-left: 20px;
     margin-top: 20px;
-    position: fixed; }
+    position: fixed;
+    z-index: 100; }
     .header .navMenu ul {
       list-style-type: none; }
       .header .navMenu ul li {
@@ -180,10 +190,10 @@ nav {
     margin-bottom: 10px; }
 
 .submit {
-  width: 85%;
+  width: 50%;
   margin: auto;
   margin-top: 240px;
-  margin-bottom: 240px; }
+  margin-bottom: 300px; }
 
 .submitBackground {
   background-color: #df5720;
@@ -208,7 +218,16 @@ form {
   margin-top: 240px;
   width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: #df5720;
+  opacity: 0.6; }
+  .footer h3 {
+    color: white; }
+  .footer img {
+    margin-bottom: 20px; }
+  .footer img:hover {
+    opacity: 0.5;
+    cursor: pointer; }
 
 .eventInfo {
   margin: auto;
@@ -216,9 +235,6 @@ form {
 
 #emailForm {
   width: 90%; }
-
-.emailInput {
-  margin: 35px; }
 
 input {
   margin-bottom: 10px; }
