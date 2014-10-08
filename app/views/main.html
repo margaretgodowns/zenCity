@@ -82,236 +82,306 @@
 
 
 
-<!-- column of future events -->
-<div class="row">
-<div class="moreEvents">
+      <!-- column of future events -->
+      <div class="row">
+        <div class="moreEvents">
 
 
-  <div id="futureEventsSection" class="eventsBackground">
-    <h1>More Events</h1>
-  </div>
+          <div id="futureEventsSection" class="eventsBackground">
+            <h1>More Events</h1>
+          </div>
 
-<div class="row">
-
-
-
-        <div class="col-md-8">
-          <div class="futureEvents">
-
-
-          <h2>Coming Up</h2>
-
-
-        <!-- event filter by type -->
-        <div class="row">
-          <label for="typeFilter">
-            <select name="tFilter" ng-model="tfilter.type">
-              <option value="">
-                All Classes
-              </option>
-              <option value="comClass">
-                Community Classes
-              </option>
-              <option value="workshop">
-                Workshops
-              </option>
-              <option value="teacherTrain">
-                Teacher Trainings
-              </option>
-              <option value="justForFun">
-                Just for Fun
-              </option>
-            </select>
-          </label>
-        </div>
-
-
-<!-- event list before moreInfo -->
-        <div ng-controller="mainCtrl">
-
-
-          <div ng-repeat="event in events | filter:tfilter | orderBy: 'datetime' | filterPastDates">
-            <div class="row">
-              <div class="col-md-2">
-                <img src="../images/smallLogo.png" alt="" />
-              </div>
-              <div class="col-md-5">
-                <h4>{{event.date | amDateFormat:'MMMM Do'}}</h4>
-              </div>
-              <div class="col-md-5">
-                <h4>{{event.name}}</h4>
-
-              </div>
-
-            </div>
+          <div class="row">
 
 
 
+            <div class="col-md-8">
+              <div class="futureEvents">
 
 
-<!-- event list expanded -->
+                <h2>Coming Up</h2>
 
-            <div class="row">
-              <img class="arrows" src="../images/downArrows.png" ng-click="moreInfo = true" ng-hide="moreInfo">
-            </div>
-            <div class="row">
-              <div class="moreInfo">
-                <div ng-show="moreInfo">
-                  <div class="row">
-                    <h4 class="showDate">{{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}} - {{event.location}}</h4>
-                  </div>
-                  <div class="row">
-                    <div class="description">
-                      {{event.description}}
+
+                <!-- event filter by type -->
+                <div class="row">
+                  <label for="typeFilter">
+                    <select name="tFilter" ng-model="tfilter.type">
+                      <option value="">
+                        All Classes
+                      </option>
+                      <option value="comClass">
+                        Community Classes
+                      </option>
+                      <option value="workshop">
+                        Workshops
+                      </option>
+                      <option value="teacherTrain">
+                        Teacher Trainings
+                      </option>
+                      <option value="justForFun">
+                        Just for Fun
+                      </option>
+                    </select>
+                  </label>
+                </div>
+
+
+                <!-- event list before moreInfo -->
+                <div ng-controller="mainCtrl">
+
+
+                  <div ng-repeat="event in events | filter:tfilter | orderBy: 'datetime' | filterPastDates">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <img src="../images/smallLogo.png" alt="" />
+                      </div>
+                      <div class="col-md-5">
+                        <h4>{{event.date | amDateFormat:'MMMM Do'}}</h4>
+                      </div>
+                      <div class="col-md-5">
+                        <h4>{{event.name}}</h4>
+
+                      </div>
+
+                    </div>
+
+
+
+
+
+                    <!-- event list expanded -->
+
+                    <div class="row">
+                      <img class="arrows" src="../images/downArrows.png" ng-click="moreInfo = true" ng-hide="moreInfo">
+                    </div>
+                    <div class="row">
+                      <div class="moreInfo">
+                        <div ng-show="moreInfo">
+                          <div class="row">
+                            <h4 class="showDate">{{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}} - {{event.location}}</h4>
+                          </div>
+                          <div class="row">
+                            <div class="description">
+                              {{event.description}}
+                            </div>
+                          </div>
+                          <div class="row">
+                            <a href="{{event.website}}">Website</a>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <img class="arrows" src="../images/upArrows.png" ng-click="moreInfo = false" ng-show="moreInfo">
+                      </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <a href="{{event.website}}">Website</a>
-                  </div>
-
                 </div>
               </div>
+            </div>
+
+            <!-- start weekly events section -->
+
+            <div class="col-md-4">
+              <div class="weeklyEvents">
+
+                <div class="dayOfWeek">
+                  <div class="row">
+                    <h3>Mondays</h3>
+                    <hr>
+                  </div>
+                  <div class="row">
+                    <h4>6pm: <a class="weekClick" href="http://bendybrewskiyoga.com/">Bendy Brewski Yoga</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>8pm: <a class="weekClick" href="http://jivamuktiyogasc.com/events.html">Chanting w/ Andrea</a></h4>
+                  </div>
+                </div>
+
+                <div class="dayOfWeek">
+                  <div class="row">
+                    <h3>Tuesdays</h3>
+                    <hr>
+                  </div>
+                  <div class="row">
+                    <h4>4pm: <a class="weekClick" href="http://www.holycowyoga.com/Schedule.html">Holy Cow Community Class</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>4:15pm: <a class="weekClick" href="http://www.jivamuktiyogasc.com/sche_class.html#!">$5 Jivamukti</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>5pm: <a class="weekClick" href="http://www.jivamuktiyogasc.com/sche_class.html#!">$5 Jivamukti</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>6:30pm: <a class="weekClick" href="http://www.gaeayoga.com/Gaea_Yoga_Center/schedule.html">Gaea Community Flow</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>6:45pm: <a class="weekClick" href="http://bendybrewskiyoga.com/">Bendy Brewski Yoga</a></h4>
+                  </div>
+                </div>
+
+                <div class="dayOfWeek">
+                  <div class="row">
+                    <h3>Wednesdays</h3>
+                    <hr>
+                  </div>
+                  <div class="row">
+                    <h4>12pm: <a class="weekClick" href="http://www.charlestoncommunityyoga.com/schedule/">CHS Community Yoga Class</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>4:15pm: <a class="weekClick" href="http://www.jivamuktiyogasc.com/sche_class.html#!">$5 Jivamukti</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>5pm: <a class="weekClick" href="http://www.jivamuktiyogasc.com/sche_class.html#!">$5 Jivamukti</a></h4>
+                  </div>
+                </div>
+
+                <div class="dayOfWeek">
+                  <div class="row">
+                    <h3>Thursdays</h3>
+                    <hr>
+                  </div>
+                  <div class="row">
+                    <h4>4pm: <a class="weekClick" href="http://www.holycowyoga.com/Schedule.html">Holy Cow Community Class</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>5pm: <a class="weekClick" href="http://www.jivamuktiyogasc.com/sche_class.html#!">$5 Jivamukti</a></h4>
+                  </div>
+                  <div class="row">
+                    <h4>5:15pm: <a class="weekClick" href="http://www.gaeayoga.com/Gaea_Yoga_Center/schedule.html">Gaea Community Flow</a></h4>
+                  </div>
+                </div>
+
+            <div class="dayOfWeek">
               <div class="row">
-                <img class="arrows" src="../images/upArrows.png" ng-click="moreInfo = false" ng-show="moreInfo">
+                <h3>Saturdays</h3>
+                <hr>
+              </div>
+              <div class="row">
+                <h4>12:30pm: <a class="weekClick" href="http://www.yogahousecharleston.com/schedule#!">Yoga House Class</a></h4>
+              </div>
+              <div class="row">
+                <h4>4pm: <a class="weekClick" href="http://www.holycowyoga.com/Schedule.html">Holy Cow Community Class</a></h4>
+              </div>
+              <div class="row">
+                <h4>5pm: <a class="weekClick" href="http://www.jivamuktiyogasc.com/sche_class.html#!">Jivamukti Open Class</a></h4>
               </div>
             </div>
+
+            <div class="dayOfWeek">
+              <div class="row">
+                <h3>Sundays</h3>
+                <hr>
+              </div>
+              <div class="row">
+                <h4>11am: <a class="weekClick" href="http://www.holycitybrewing.com/event/2014/09/bendy-brewski-yoga-brunch">Bendy Brewski Brunch</a></h4>
+              </div>
+              <div class="row">
+                <h4>4pm: <a class="weekClick" href="http://www.yogahousecharleston.com/passes">Purpose</a></h4>
+              </div>
+              <div class="row">
+                <h4>6pm: <a class="weekClick" href="http://www.holycowyoga.com/Schedule.html">Holy Cow Community Class</a></h4>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <!-- end weekly events section -->
+
+
+  <!-- end future events section -->
+
+
+
+
+
+  <!-- event submission form -->
+  <div class="footer">
+  <div class="row">
+
+    <div class="col-md-4">
+
+
+    <div class="row">
+      <div class="submitBackground">
+        <h1>Submit an Event</h1>
       </div>
-
-      <!-- start weekly events section -->
-
-      <div class="col-md-4">
-        <div class="weeklyEvents">
+    </div>
+    <div class="submitEvent" id="submitSection">
 
 
-        <h2>Weekly</h2>
-        <div class="dayOfWeek">
-        <div class="row">
-          <h3>Mondays</h3>
-          <hr>
-        </div>
-        <div class="row">
-          <h4>6pm: <a class="weekClick" href="http://bendybrewskiyoga.com/">Bendy Brewski Yoga</a></h4>
-        </div>
-        <div class="row">
-          <h4>8pm: <a class="weekClick" href="http://jivamuktiyogasc.com/events.html">Chanting w/ Andrea</a></h4>
-        </div>
-        </div>
+      <form ng-submit="addSingleEvent(singleEvent)" class="form-inline">
+        <input ng-model="singleEvent.name" class="form-control" type="text" placeholder="Event Name">
+        <input type="date" ng-model="singleEvent.date" class="form-control">
+        <input ng-model="singleEvent.time" class="form-control" type="time" placeholder="Time">
+        <input ng-model="singleEvent.location" class="form-control" type="text" placeholder="Location">
+        <!-- <input ng-model="singleEvent.yourName" class="form-control" type="text" placeholder="Your Name">
+        <input ng-model="singleEvent.yourEmail" class="form-control" type="text" placeholder="Your Email">
+        <input ng-model="singleEvent.studio" class="form-control" type="text" placeholder="Studio/Organization"> -->
+        <input type="url" ng-model="singleEvent.website" class="form-control" type="text" placeholder="Website">
+        <textarea ng-model="singleEvent.description" class="form-control" rows="3" placeholder="Event Description"></textarea>
 
-        <div class="dayOfWeek">
-        <div class="row">
-          <h3>Tuesdays</h3>
-          <hr>
-        </div>
-        <div class="row">
-          <h4>4pm: <a class="weekClick" href="http://www.holycowyoga.com/Schedule.html">Holy Cow Community Class</a></h4>
-        </div>
-        <div class="row">
-          <h4>4:15pm: <a class="weekClick" href="http://www.jivamuktiyogasc.com/sche_class.html#!">$5 Busy People Class</a></h4>
-        </div>
-        <div class="row">
-          <h4>5pm: <a class="weekClick" href="http://www.jivamuktiyogasc.com/sche_class.html#!">$5 Busy People Class</a></h4>
-        </div>
-        <div class="row">
-          <h4>6:30pm: <a class="weekClick" href="http://www.gaeayoga.com/Gaea_Yoga_Center/schedule.html">Gaea Community Flow</a></h4>
-        </div>
-        <div class="row">
-          <h4>6:45pm: <a class="weekClick" href="http://bendybrewskiyoga.com/">Bendy Brewski Yoga</a></h4>
-        </div>
+        <label class="radio-inline">
+          <input ng-model="singleEvent.type" name="eventType" type="radio" value="comClass">Community
+        </label>
+        <label class="radio-inline">
+          <input ng-model="singleEvent.type" name="eventType" type="radio" value="workshop">Workshop
+        </label>
+        <label class="radio-inline">
+          <input ng-model="singleEvent.type" name="eventType" type="radio" value="teacherTrain">Training
+        </label>
+        <label class="radio-inline">
+          <input ng-model="singleEvent.type" name="eventType" type="radio" value="justForFun">Fun
+        </label>
+        <br>
+        <button type="submit" name="button">Submit</button>
+      </form>
+
+    </div>
+
+
+</div>
+<div class="col-md-4">
+
+</div>
+<div class="col-md-4">
+  <div class="row">
+    <div class="submitBackground">
+      <h1>Contact</h1>
+    </div>
+  </div>
+  <div class="submitEvent">
+    <div class="row">
+      <h4 class="emailInput">
+      Sign up for Zen City Alerts
+    </h4>
+    </div>
+    <div class="row">
+      <form action="index.html" method="post">
+        <input class="form-control" id="emailForm" type="text" name="some_name" value="" placeholder="enter email">
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img src="../images/emailIcon.png" alt="" />
       </div>
-
-      <div class="dayOfWeek">
-        <div class="row">
-          <h3>Wednesdays</h3>
-          <hr>
-        </div>
+      <div class="col-md-3">
+        <img src="../images/facebookIcon.png" alt="" />
       </div>
-
-      <div class="dayOfWeek">
-        <div class="row">
-          <h3>Thursdays</h3>
-          <hr>
-        </div>
+      <div class="col-md-3">
+        <img src="../images/instaIcon.png" alt="" />
       </div>
-
-      <div class="dayOfWeek">
-        <div class="row">
-          <h3>Fridays</h3>
-          <hr>
-        </div>
-      </div>
-
-      <div class="dayOfWeek">
-        <div class="row">
-          <h3>Saturdays</h3>
-          <hr>
-        </div>
-      </div>
-
-      <div class="dayOfWeek">
-        <div class="row">
-          <h3>Sundays</h3>
-          <hr>
-        </div>
-        </div>
-
+      <div class="col-md-3">
+        <img src="../images/twitterIcon.png" alt="" />
       </div>
     </div>
   </div>
-  </div>
-
-
-      <!-- end weekly events section -->
-
-
-      <!-- end future events section -->
-
-
-
-
-
-      <!-- event submission form -->
-      <div class="row">
-        <div class="submitBackground">
-          <h1>Submit an Event</h1>
-        </div>
-      </div>
-      <div class="submitEvent" id="submitSection">
-
-
-        <form ng-submit="addSingleEvent(singleEvent)" class="form-inline">
-          <input ng-model="singleEvent.name" class="form-control" type="text" placeholder="Event Name">
-          <input type="date" ng-model="singleEvent.date" class="form-control">
-          <input ng-model="singleEvent.time" class="form-control" type="time" placeholder="Time">
-          <input ng-model="singleEvent.location" class="form-control" type="text" placeholder="Location">
-          <input ng-model="singleEvent.yourName" class="form-control" type="text" placeholder="Your Name">
-          <input ng-model="singleEvent.yourEmail" class="form-control" type="text" placeholder="Your Email">
-          <input ng-model="singleEvent.studio" class="form-control" type="text" placeholder="Studio/Organization">
-          <input type="url" ng-model="singleEvent.website" class="form-control" type="text" placeholder="Website">
-          <textarea ng-model="singleEvent.description" class="form-control" rows="3" placeholder="Event Description"></textarea>
-
-          <h4>Event Type</h4>
-          <label class="radio-inline">
-            <input ng-model="singleEvent.type" name="eventType" type="radio" value="comClass">Community Class
-          </label>
-          <label class="radio-inline">
-            <input ng-model="singleEvent.type" name="eventType" type="radio" value="workshop">Workshop
-          </label>
-          <label class="radio-inline">
-            <input ng-model="singleEvent.type" name="eventType" type="radio" value="teacherTrain">Teacher Training
-          </label>
-          <label class="radio-inline">
-            <input ng-model="singleEvent.type" name="eventType" type="radio" value="justForFun">Just for Fun
-          </label>
-          <br>
-          <button type="submit" name="button">Submit</button>
-        </form>
-
-      </div>
-
-
-
-
-    </div>
+</div>
+</div>
+</div>
+</div>

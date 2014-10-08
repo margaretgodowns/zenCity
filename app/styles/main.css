@@ -46,8 +46,8 @@ h4 {
         border: none;
         margin-bottom: 0px;
         padding: 0px; }
-        .header .navMenu ul li :hover {
-          cursor: pointer; }
+      .header .navMenu ul li:hover {
+        cursor: pointer; }
   .header #headerLogo {
     margin-top: 3%; }
   .header img {
@@ -120,7 +120,7 @@ h1 {
       cursor: pointer;
       opacity: 0.5; }
     .moreEvents .futureEvents a {
-      color: #8cb0bb; }
+      color: #df5720; }
     .moreEvents .futureEvents .description {
       width: 75%;
       margin: auto; }
@@ -137,7 +137,7 @@ h1 {
       font-size: 2.5em; }
     .moreEvents .weeklyEvents h3 {
       text-align: left;
-      line-height: 2px; }
+      line-height: 0.5px; }
     .moreEvents .weeklyEvents h4 {
       color: white;
       font-size: 1.5em;
@@ -178,26 +178,41 @@ nav {
     margin-bottom: 10px; }
 
 .submitBackground {
-  background-color: black; }
+  background-color: #df5720;
+  opacity: 0.6;
+  padding: 20px; }
 
-#submitSection {
+.submitEvent {
   background-color: white; }
-  #submitSection form {
-    width: 60%;
-    margin: auto; }
-  #submitSection .submitEvent {
-    text-align: center;
-    width: 85%;
-    margin: auto;
-    background-color: white;
-    opacity: 0.7;
-    margin-top: 15px;
-    padding: 10px; }
-    #submitSection .submitEvent .eventInfo {
-      margin: auto;
-      width: 41.5%; }
-    #submitSection .submitEvent input {
-      margin-bottom: 10px; }
-    #submitSection .submitEvent button {
-      margin-top: 15px;
-      margin-bottom: 15px; }
+  .submitEvent img {
+    padding: 20px; }
+
+form {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px; }
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.eventInfo {
+  margin: auto;
+  width: 41.5%; }
+
+#emailForm {
+  width: 90%; }
+
+.emailInput {
+  margin: 35px; }
+
+input {
+  margin-bottom: 10px; }
+
+button {
+  margin-top: 15px;
+  margin-bottom: 15px; }

@@ -60,9 +60,10 @@ h4{
         border: none;
         margin-bottom: 0px;
         padding: 0px;
-        :hover{
-          cursor: pointer;
-        }
+
+      }
+      li:hover{
+        cursor: pointer;
       }
     }
   }
@@ -158,7 +159,7 @@ h1{
       opacity: .5;
     }
     a{
-      color: #8cb0bb;
+      color: #df5720;
     }
     .description{
       width: 75%;
@@ -182,7 +183,7 @@ h1{
       }
   h3{
     text-align: left;
-    line-height: 2px;
+    line-height: .5px;
   }
   h4{
     color: white;
@@ -238,26 +239,38 @@ nav{
 
 //submit event
 .submitBackground{
-  background-color: black;
+  background-color: #df5720;
+  opacity: .6;
+  padding: 20px;
 }
-#submitSection{
+.submitEvent{
   background-color: white;
-
-  form{
-    width: 60%;
-    margin: auto;
+  img{
+    padding: 20px;
   }
-  .submitEvent{
+}
+  form{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .footer{
     text-align: center;
-    width: 85%;
-    margin: auto;
-    background-color: white;
-    opacity: .7;
-    margin-top: 15px;
-    padding: 10px;
+    margin-top: 60px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
     .eventInfo{
       margin: auto;
       width: 41.5%;
+    }
+    #emailForm{
+      width: 90%;
+    }
+    .emailInput{
+      margin: 35px;
     }
     input{
       margin-bottom: 10px;
@@ -266,5 +279,3 @@ nav{
       margin-top: 15px;
       margin-bottom: 15px;
     }
-  }
-}
