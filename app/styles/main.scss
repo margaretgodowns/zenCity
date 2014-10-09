@@ -5,28 +5,30 @@ $orange: #df5720;
 $teal: #8cb0bb;
 
 //general styles
-
-body{
-  background-image: url('../images/altHeader4.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-.container{
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
+.row{
+  text-align: center;
+  margin: auto;
 }
 
 .col-md-12{
   padding: 0px;
 }
 
-.row{
+h1{
+  font-family: $font-stack-b;
+  text-align: left;
+  margin-left: 20px;
+  color: white;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2em;
+}
+
+h2{
   text-align: center;
-  margin: auto;
+  font-family: $font-stack-a;
+  color: black;
 }
 
 h3{
@@ -51,271 +53,224 @@ h5{
   text-align: center;
 }
 
-
-//main.html
-
-//header
-
-.header{
-  height: 700px;
-  .backImgs{
-    width: 100%;
-  }
-  .navMenu{
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 20px;
-    position: fixed;
-    z-index: 100;
-    ul{
-      list-style-type: none;
-      li{
-        background: transparent;
-        font-family: $font-stack-a;
-        color: white;
-        font-size: 1.5em;
-        margin-left: -32px;
-        border: none;
-        margin-bottom: 0px;
-        padding: 0px;
-
-      }
-      li:hover{
-        cursor: pointer;
-      }
-    }
-  }
-
-  #headerLogo{
-    margin-top: 3%;
-  }
-  img{
-    background-color: transparent;
-    border: none;
-  }
-}
-
-//main navigation
-
-
-
-//event list
-
-h1{
-  font-family: $font-stack-b;
-  text-align: left;
-  margin-left: 20px;
-  color: white;
-  margin: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 2em;
-}
-.eventsBackground{
+.sectionTop{
   background-color: $orange;
   opacity: .6;
   padding: 20px;
 }
-#eventsSection{
-  background-color: white;
-}
-#todaySection{
-  width: 85%;
-  margin: auto;
-  margin-top: 500px;
-}
-.eventsToday{
-  padding: 10px;
-  width: 85%;
-  margin: auto;
-  background-color: white;
-  opacity: .7;
-  margin-bottom: 240px;
-  .todayRepeat{
-    border-right: 2px solid $teal;
-    height: 300px;
-    overflow: scroll;
-  }
-  a{
-    color:$teal
-  }
-  .weeklyEventsLink{
-    margin-top: 20px;
-    :hover{
-      opacity: .5;
-      cursor: pointer;
-    }
-  }
-}
 
+//begin nested styles
 
-.moreEvents{
-  margin-bottom: 240px;
-  margin: auto;
-  width: 85%;
-.futureEvents{
-  padding: 10px;
-  width: 100%;
-  margin: auto;
-  background-color: white;
-  opacity: .7;
-  height: 1000px;
-  overflow: scroll;
+body{
+  background-image: url('../images/altHeader4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  .container{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 
-    h4{
-      font-family: $font-stack-a;
-      color: black;
-      margin-top: 40px;
-      text-align: left;
-      padding: 5px;
-    }
-    .showDate{
-      text-align: center;
-      margin-top: -30px;
-    }
-    .arrows:hover{
-      cursor: pointer;
-      opacity: .5;
-    }
-    a{
-      color: $orange;
-    }
-    .description{
-      width: 75%;
-      margin: auto;
-    }
+    //header
 
-
-}
-
-.weeklyEvents{
-  padding: 10px;
-  width: 100%;
-  margin: auto;
-  background-color:$teal;
-  opacity: .7;
-  height: 1000px;
-  overflow: scroll;
-  h1{
+    .header{
+      height: 700px;
+      .navMenu{
         text-align: left;
-        font-size: 2.5em;
+        margin-left: 20px;
+        margin-top: 20px;
+        position: fixed;
+        z-index: 100;
+        img{
+          background-color: transparent;
+          border: none;
+        }
+        ul{
+          list-style-type: none;
+          li{
+            background: transparent;
+            font-family: $font-stack-a;
+            color: white;
+            font-size: 1.5em;
+            margin-left: -32px;
+            border: none;
+            margin-bottom: 0px;
+            padding: 0px;
+          }
+          li:hover{
+            cursor: pointer;
+          }
+        }
       }
-  h3{
-    text-align: left;
-    line-height: .5px;
-  }
-  h4{
-    color: white;
-    font-size: 1.5em;
-    text-align: left;
-    font-weight: bold;
-  }
-  a{
-    color: white;
-  }
-}
-}
-.weekClick:hover{
-  background-color: $orange;
-}
-
-.col-md-8{
-  padding: 0px;
-}
-.col-md-4{
-  padding: 0px;
-}
-
-h2{
-  text-align: center;
-  font-family: $font-stack-a;
-  color: black;
-}
-nav{
-  text-align: center;
-  .eventsNav{
-    list-style-type: none;
-    li{
-      display: inline-block;
-      font-family: $font-stack-a;
-      a{
-        color: black;
+      #headerLogo{
+        margin-top: 3%;
       }
     }
-  }
-}
-.moreInfo{
-  width: 100%;
-  margin: auto;
-  padding: 15px;
-  button{
-    margin-bottom: 10px;
-  }
-}
 
+    //start today section
 
-
-
-//submit event
-
-.submit{
-  width: 50%;
-  margin: auto;
-  margin-top: 240px;
-  margin-bottom: 300px;
-}
-
-.submitBackground{
-  background-color: $orange;
-  opacity: .6;
-  padding: 20px;
-}
-.submitEvent{
-  background-color: white;
-  img{
-    padding: 20px;
-  }
-
-}
-  form{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    input{
-      margin: 10px;
+    #todaySection{
+      width: 85%;
+      margin: auto;
+      margin-top: 250px;
     }
-  }
-  .footer{
-    text-align: center;
-    margin-top: 240px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: $orange;
-    opacity: .6;
-    h3{
-      color: white;
+    .eventsToday{
+      padding: 10px;
+      width: 85%;
+      margin: auto;
+      background-color: white;
+      opacity: .7;
+      margin-bottom: 240px;
+      .todayRepeat{
+        border-right: 2px solid $teal;
+        height: 300px;
+        overflow: scroll;
+        a{
+          color:$teal
+        }
+      }
+      .weeklyEventsLink{
+        margin-top: 20px;
+        :hover{
+          opacity: .5;
+          cursor: pointer;
+        }
+      }
     }
-    img{
-      margin-bottom: 20px;
+
+    //end today section
+    //start moreEvents section
+
+    .moreEvents{
+      margin-bottom: 240px;
+      margin: auto;
+      width: 85%;
+      .col-md-8{
+        padding: 0px;
+        .futureEvents{
+          padding: 10px;
+          width: 100%;
+          margin: auto;
+          background-color: white;
+          opacity: .7;
+          height: 1000px;
+          overflow: scroll;
+          .moreInfo{
+            width: 100%;
+            margin: auto;
+            padding: 15px;
+            button{
+              margin-bottom: 10px;
+            }
+          }
+          .arrows:hover{
+            cursor: pointer;
+            opacity: .5;
+          }
+          h4{
+            margin-top: 40px;
+            text-align: left;
+            padding: 5px;
+          }
+          .showTime{
+            text-align: center;
+            margin-top: -30px;
+          }
+          .description{
+            width: 75%;
+            margin: auto;
+          }
+          a{
+            color: $orange;
+          }
+        }
+      }
+      .col-md-4{
+        padding: 0px;
+        .weeklyEvents{
+          padding: 10px;
+          width: 100%;
+          margin: auto;
+          background-color:$teal;
+          opacity: .7;
+          height: 1000px;
+          overflow: scroll;
+          h3{
+            text-align: left;
+            line-height: .5px;
+          }
+          h4{
+            color: white;
+            text-align: left;
+            font-weight: bold;
+            a{
+              color: white;
+            }
+            .weekClick:hover{
+              background-color: $orange;
+            }
+          }
+        }
+      }
     }
-    img:hover{
+
+    //end moreEvents section
+    //start submit section
+
+    .submit{
+      width: 50%;
+      margin: auto;
+      margin-top: 240px;
+      margin-bottom: 300px;
+      .submitBackground{
+        background-color: $orange;
+        opacity: .6;
+        padding: 20px;
+      }
+      .submitEvent{
+        background-color: white;
+        opacity: .6;
+        button{
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    form{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+      input{
+        margin: 10px;
+      }
+    }
+
+    //end submit section
+    //start footer
+    .footer{
+      text-align: center;
+      margin-top: 240px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $orange;
+      opacity: .6;
+      h3{
+        color: white;
+      }
+      img{
+        margin-bottom: 20px;
+      }
+      img:hover{
         opacity: .5;
         cursor: pointer;
       }
+      #emailForm{
+        width: 90%;
+        margin-bottom: 10px;
+      }
+    }
   }
-    .eventInfo{
-      margin: auto;
-      width: 41.5%;
-    }
-    #emailForm{
-      width: 90%;
-    }
-    input{
-      margin-bottom: 10px;
-    }
-    button{
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
+}

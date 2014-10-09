@@ -1,21 +1,24 @@
-body {
-  background-image: url('../images/altHeader4.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; }
-
-.container {
-  margin: 0px;
-  padding: 0px;
-  width: 100%; }
+.row {
+  text-align: center;
+  margin: auto; }
 
 .col-md-12 {
   padding: 0px; }
 
-.row {
+h1 {
+  font-family: 'Courier New', courier;
+  text-align: left;
+  margin-left: 20px;
+  color: white;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2em; }
+
+h2 {
   text-align: center;
-  margin: auto; }
+  font-family: 'Open Sans', sans-serif;
+  color: black; }
 
 h3 {
   font-family: 'Courier New', courier;
@@ -36,209 +39,162 @@ h5 {
   width: 70%;
   text-align: center; }
 
-.header {
-  height: 700px; }
-  .header .backImgs {
+.sectionTop {
+  background-color: #df5720;
+  opacity: 0.6;
+  padding: 20px; }
+
+body {
+  background-image: url('../images/altHeader4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+  body .container {
+    margin: 0px;
+    padding: 0px;
     width: 100%; }
-  .header .navMenu {
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 20px;
-    position: fixed;
-    z-index: 100; }
-    .header .navMenu ul {
-      list-style-type: none; }
-      .header .navMenu ul li {
-        background: transparent;
-        font-family: 'Open Sans', sans-serif;
-        color: white;
-        font-size: 1.5em;
-        margin-left: -32px;
-        border: none;
-        margin-bottom: 0px;
+    body .container .header {
+      height: 700px; }
+      body .container .header .navMenu {
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        position: fixed;
+        z-index: 100; }
+        body .container .header .navMenu img {
+          background-color: transparent;
+          border: none; }
+        body .container .header .navMenu ul {
+          list-style-type: none; }
+          body .container .header .navMenu ul li {
+            background: transparent;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            font-size: 1.5em;
+            margin-left: -32px;
+            border: none;
+            margin-bottom: 0px;
+            padding: 0px; }
+          body .container .header .navMenu ul li:hover {
+            cursor: pointer; }
+      body .container .header #headerLogo {
+        margin-top: 3%; }
+    body .container #todaySection {
+      width: 85%;
+      margin: auto;
+      margin-top: 250px; }
+    body .container .eventsToday {
+      padding: 10px;
+      width: 85%;
+      margin: auto;
+      background-color: white;
+      opacity: 0.7;
+      margin-bottom: 240px; }
+      body .container .eventsToday .todayRepeat {
+        border-right: 2px solid #8cb0bb;
+        height: 300px;
+        overflow: scroll; }
+        body .container .eventsToday .todayRepeat a {
+          color: #8cb0bb; }
+      body .container .eventsToday .weeklyEventsLink {
+        margin-top: 20px; }
+        body .container .eventsToday .weeklyEventsLink :hover {
+          opacity: 0.5;
+          cursor: pointer; }
+    body .container .moreEvents {
+      margin-bottom: 240px;
+      margin: auto;
+      width: 85%; }
+      body .container .moreEvents .col-md-8 {
         padding: 0px; }
-      .header .navMenu ul li:hover {
-        cursor: pointer; }
-  .header #headerLogo {
-    margin-top: 3%; }
-  .header img {
-    background-color: transparent;
-    border: none; }
-
-h1 {
-  font-family: 'Courier New', courier;
-  text-align: left;
-  margin-left: 20px;
-  color: white;
-  margin: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 2em; }
-
-.eventsBackground {
-  background-color: #df5720;
-  opacity: 0.6;
-  padding: 20px; }
-
-#eventsSection {
-  background-color: white; }
-
-#todaySection {
-  width: 85%;
-  margin: auto;
-  margin-top: 500px; }
-
-.eventsToday {
-  padding: 10px;
-  width: 85%;
-  margin: auto;
-  background-color: white;
-  opacity: 0.7;
-  margin-bottom: 240px; }
-  .eventsToday .todayRepeat {
-    border-right: 2px solid #8cb0bb;
-    height: 300px;
-    overflow: scroll; }
-  .eventsToday a {
-    color: #8cb0bb; }
-  .eventsToday .weeklyEventsLink {
-    margin-top: 20px; }
-    .eventsToday .weeklyEventsLink :hover {
-      opacity: 0.5;
-      cursor: pointer; }
-
-.moreEvents {
-  margin-bottom: 240px;
-  margin: auto;
-  width: 85%; }
-  .moreEvents .futureEvents {
-    padding: 10px;
-    width: 100%;
-    margin: auto;
-    background-color: white;
-    opacity: 0.7;
-    height: 1000px;
-    overflow: scroll; }
-    .moreEvents .futureEvents h4 {
-      font-family: 'Open Sans', sans-serif;
-      color: black;
-      margin-top: 40px;
-      text-align: left;
-      padding: 5px; }
-    .moreEvents .futureEvents .showDate {
+        body .container .moreEvents .col-md-8 .futureEvents {
+          padding: 10px;
+          width: 100%;
+          margin: auto;
+          background-color: white;
+          opacity: 0.7;
+          height: 1000px;
+          overflow: scroll; }
+          body .container .moreEvents .col-md-8 .futureEvents .moreInfo {
+            width: 100%;
+            margin: auto;
+            padding: 15px; }
+            body .container .moreEvents .col-md-8 .futureEvents .moreInfo button {
+              margin-bottom: 10px; }
+          body .container .moreEvents .col-md-8 .futureEvents .arrows:hover {
+            cursor: pointer;
+            opacity: 0.5; }
+          body .container .moreEvents .col-md-8 .futureEvents h4 {
+            margin-top: 40px;
+            text-align: left;
+            padding: 5px; }
+          body .container .moreEvents .col-md-8 .futureEvents .showTime {
+            text-align: center;
+            margin-top: -30px; }
+          body .container .moreEvents .col-md-8 .futureEvents .description {
+            width: 75%;
+            margin: auto; }
+          body .container .moreEvents .col-md-8 .futureEvents a {
+            color: #df5720; }
+      body .container .moreEvents .col-md-4 {
+        padding: 0px; }
+        body .container .moreEvents .col-md-4 .weeklyEvents {
+          padding: 10px;
+          width: 100%;
+          margin: auto;
+          background-color: #8cb0bb;
+          opacity: 0.7;
+          height: 1000px;
+          overflow: scroll; }
+          body .container .moreEvents .col-md-4 .weeklyEvents h3 {
+            text-align: left;
+            line-height: 0.5px; }
+          body .container .moreEvents .col-md-4 .weeklyEvents h4 {
+            color: white;
+            text-align: left;
+            font-weight: bold; }
+            body .container .moreEvents .col-md-4 .weeklyEvents h4 a {
+              color: white; }
+            body .container .moreEvents .col-md-4 .weeklyEvents h4 .weekClick:hover {
+              background-color: #df5720; }
+    body .container .submit {
+      width: 50%;
+      margin: auto;
+      margin-top: 240px;
+      margin-bottom: 300px; }
+      body .container .submit .submitBackground {
+        background-color: #df5720;
+        opacity: 0.6;
+        padding: 20px; }
+      body .container .submit .submitEvent {
+        background-color: white;
+        opacity: 0.6; }
+        body .container .submit .submitEvent button {
+          margin-top: 15px;
+          margin-bottom: 15px; }
+    body .container form {
+      width: 80%;
+      margin: auto;
       text-align: center;
-      margin-top: -30px; }
-    .moreEvents .futureEvents .arrows:hover {
-      cursor: pointer;
-      opacity: 0.5; }
-    .moreEvents .futureEvents a {
-      color: #df5720; }
-    .moreEvents .futureEvents .description {
-      width: 75%;
-      margin: auto; }
-  .moreEvents .weeklyEvents {
-    padding: 10px;
-    width: 100%;
-    margin: auto;
-    background-color: #8cb0bb;
-    opacity: 0.7;
-    height: 1000px;
-    overflow: scroll; }
-    .moreEvents .weeklyEvents h1 {
-      text-align: left;
-      font-size: 2.5em; }
-    .moreEvents .weeklyEvents h3 {
-      text-align: left;
-      line-height: 0.5px; }
-    .moreEvents .weeklyEvents h4 {
-      color: white;
-      font-size: 1.5em;
-      text-align: left;
-      font-weight: bold; }
-    .moreEvents .weeklyEvents a {
-      color: white; }
-
-.weekClick:hover {
-  background-color: #df5720; }
-
-.col-md-8 {
-  padding: 0px; }
-
-.col-md-4 {
-  padding: 0px; }
-
-h2 {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: black; }
-
-nav {
-  text-align: center; }
-  nav .eventsNav {
-    list-style-type: none; }
-    nav .eventsNav li {
-      display: inline-block;
-      font-family: 'Open Sans', sans-serif; }
-      nav .eventsNav li a {
-        color: black; }
-
-.moreInfo {
-  width: 100%;
-  margin: auto;
-  padding: 15px; }
-  .moreInfo button {
-    margin-bottom: 10px; }
-
-.submit {
-  width: 50%;
-  margin: auto;
-  margin-top: 240px;
-  margin-bottom: 300px; }
-
-.submitBackground {
-  background-color: #df5720;
-  opacity: 0.6;
-  padding: 20px; }
-
-.submitEvent {
-  background-color: white; }
-  .submitEvent img {
-    padding: 20px; }
-
-form {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding: 20px; }
-  form input {
-    margin: 10px; }
-
-.footer {
-  text-align: center;
-  margin-top: 240px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #df5720;
-  opacity: 0.6; }
-  .footer h3 {
-    color: white; }
-  .footer img {
-    margin-bottom: 20px; }
-  .footer img:hover {
-    opacity: 0.5;
-    cursor: pointer; }
-
-.eventInfo {
-  margin: auto;
-  width: 41.5%; }
-
-#emailForm {
-  width: 90%; }
-
-input {
-  margin-bottom: 10px; }
-
-button {
-  margin-top: 15px;
-  margin-bottom: 15px; }
+      padding: 20px; }
+      body .container form input {
+        margin: 10px; }
+    body .container .footer {
+      text-align: center;
+      margin-top: 240px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #df5720;
+      opacity: 0.6; }
+      body .container .footer h3 {
+        color: white; }
+      body .container .footer img {
+        margin-bottom: 20px; }
+      body .container .footer img:hover {
+        opacity: 0.5;
+        cursor: pointer; }
+      body .container .footer #emailForm {
+        width: 90%;
+        margin-bottom: 10px; }

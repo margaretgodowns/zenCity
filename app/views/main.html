@@ -40,7 +40,7 @@
   <!-- start today section -->
 
   <div class="row">
-    <div id="todaySection" class="eventsBackground">
+    <div id="todaySection" class="sectionTop">
       <h1 class="titles">Today's Events</h1>
     </div>
   </div>
@@ -89,7 +89,7 @@
         <div class="moreEvents">
 
 
-          <div id="futureEventsSection" class="eventsBackground">
+          <div id="futureEventsSection" class="sectionTop">
             <h1>More Events</h1>
           </div>
 
@@ -160,7 +160,7 @@
                       <div class="moreInfo">
                         <div ng-show="moreInfo">
                           <div class="row">
-                            <h4 class="showDate">{{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}} - {{event.location}}</h4>
+                            <h4 class="showTime">{{ combine(event.date,event.time) | amDateFormat: 'h:mm a'}} - {{event.location}}</h4>
                           </div>
                           <div class="row">
                             <div class="description">
@@ -187,7 +187,7 @@
             <div class="col-md-4">
               <div class="weeklyEvents">
 
-                <div class="dayOfWeek">
+                <div>
                   <div class="row">
                     <h3>Mondays</h3>
                     <hr>
@@ -200,7 +200,7 @@
                   </div>
                 </div>
 
-                <div class="dayOfWeek">
+                <div >
                   <div class="row">
                     <h3>Tuesdays</h3>
                     <hr>
@@ -222,7 +222,7 @@
                   </div>
                 </div>
 
-                <div class="dayOfWeek">
+                <div >
                   <div class="row">
                     <h3>Wednesdays</h3>
                     <hr>
@@ -238,7 +238,7 @@
                   </div>
                 </div>
 
-                <div class="dayOfWeek">
+                <div >
                   <div class="row">
                     <h3>Thursdays</h3>
                     <hr>
@@ -254,7 +254,7 @@
                   </div>
                 </div>
 
-            <div class="dayOfWeek">
+            <div >
               <div class="row">
                 <h3>Saturdays</h3>
                 <hr>
@@ -270,7 +270,7 @@
               </div>
             </div>
 
-            <div class="dayOfWeek">
+            <div>
               <div class="row">
                 <h3>Sundays</h3>
                 <hr>
@@ -366,7 +366,7 @@
     <div class="col-md-4">
 <h3>About Zen City</h3>
 <h5>
-Charleston, SC has become a mecca for yoga. Zen City does the leg work to find all the happenings in the yoga community and list them for you in one spot so you'll never miss another downward-facing dog. So you can get back to doing what's important - practicing in the Holy City.
+Zen City rounds up all the yoga events, community classes, teacher trainings, and workshops happening in Charleston so you'll never miss another downward-facing dog.  
 </h5>
     </div>
     <div class="col-md-4">
