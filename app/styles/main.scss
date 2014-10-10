@@ -117,7 +117,7 @@ body{
     #todaySection{
       width: 85%;
       margin: auto;
-      margin-top: 250px;
+      margin-top: 350px;
     }
     .eventsToday{
       padding: 10px;
@@ -125,7 +125,7 @@ body{
       margin: auto;
       background-color: white;
       opacity: .7;
-      margin-bottom: 240px;
+      margin-bottom: 300px;
       .todayRepeat{
         border-right: 2px solid $teal;
         height: 300px;
@@ -147,7 +147,7 @@ body{
     //start moreEvents section
 
     .moreEvents{
-      margin-bottom: 240px;
+      margin-bottom: 300px;
       margin: auto;
       width: 85%;
       .col-md-8{
@@ -225,7 +225,7 @@ body{
     .submit{
       width: 50%;
       margin: auto;
-      margin-top: 240px;
+      margin-top: 300px;
       margin-bottom: 300px;
       .submitBackground{
         background-color: $orange;

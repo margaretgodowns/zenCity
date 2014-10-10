@@ -84,14 +84,14 @@ body {
     body .container #todaySection {
       width: 85%;
       margin: auto;
-      margin-top: 250px; }
+      margin-top: 350px; }
     body .container .eventsToday {
       padding: 10px;
       width: 85%;
       margin: auto;
       background-color: white;
       opacity: 0.7;
-      margin-bottom: 240px; }
+      margin-bottom: 300px; }
       body .container .eventsToday .todayRepeat {
         border-right: 2px solid #8cb0bb;
         height: 300px;
@@ -104,7 +104,7 @@ body {
           opacity: 0.5;
           cursor: pointer; }
     body .container .moreEvents {
-      margin-bottom: 240px;
+      margin-bottom: 300px;
       margin: auto;
       width: 85%; }
       body .container .moreEvents .col-md-8 {
@@ -162,7 +162,7 @@ body {
     body .container .submit {
       width: 50%;
       margin: auto;
-      margin-top: 240px;
+      margin-top: 300px;
       margin-bottom: 300px; }
       body .container .submit .submitBackground {
         background-color: #df5720;
