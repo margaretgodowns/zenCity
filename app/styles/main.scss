@@ -4,6 +4,7 @@ $font-stack-b: 'Courier New', courier;
 $orange: #df5720;
 $teal: #8cb0bb;
 
+
 //general styles
 .row{
   text-align: center;
@@ -51,6 +52,7 @@ h5{
   margin: auto;
   width: 70%;
   text-align: center;
+  line-height: 25px;
 }
 
 .sectionTop{
@@ -58,6 +60,8 @@ h5{
   opacity: .6;
   padding: 20px;
 }
+
+
 
 //begin nested styles
 
@@ -242,8 +246,12 @@ body{
       margin: auto;
       text-align: center;
       padding: 20px;
-      input{
+      .form-control{
         margin: 10px;
+      }
+      .radio-inline{
+        margin: 10px;
+        position: relative;
       }
     }
 

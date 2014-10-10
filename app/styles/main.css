@@ -37,7 +37,8 @@ h5 {
   font-size: 1.2em;
   margin: auto;
   width: 70%;
-  text-align: center; }
+  text-align: center;
+  line-height: 25px; }
 
 .sectionTop {
   background-color: #df5720;
@@ -178,8 +179,11 @@ body {
       margin: auto;
       text-align: center;
       padding: 20px; }
-      body .container form input {
+      body .container form .form-control {
         margin: 10px; }
+      body .container form .radio-inline {
+        margin: 10px;
+        position: relative; }
     body .container .footer {
       text-align: center;
       margin-top: 240px;
