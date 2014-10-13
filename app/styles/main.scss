@@ -1,10 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+//media queries
+
 
 //variables
 $font-stack-a: 'Open Sans', sans-serif;
 $font-stack-b: 'Courier New', courier;
 $orange: #df5720;
 $teal: #8cb0bb;
+
 
 
 //general styles
@@ -31,6 +34,7 @@ h1{
 h2{
   text-align: center;
   font-family: $font-stack-a;
+  font-weight: lighter;
   color: black;
 }
 
@@ -42,6 +46,7 @@ h3{
 
 h4{
   font-family: $font-stack-a;
+  font-weight: lighter;
   color: black;
   font-size: 1.5em;
 }
@@ -49,7 +54,6 @@ h4{
 h5{
   font-family: $font-stack-a;
   color: white;
-  font-weight: bolder;
   font-size: 1.2em;
   margin: auto;
   width: 70%;
@@ -107,6 +111,12 @@ body{
           li:hover{
             cursor: pointer;
           }
+          @media (max-width:767px) {
+        li{
+          background: white;
+          color: $orange;
+        }
+      }
         }
       }
       #headerLogo{
@@ -229,6 +239,7 @@ body{
       margin: auto;
       margin-top: 300px;
       margin-bottom: 300px;
+
       .submitBackground{
         background-color: $orange;
         opacity: .6;
@@ -243,6 +254,12 @@ body{
         }
       }
     }
+
+    @media (max-width:767px) {
+  .submit{
+    width: 90%;
+  }
+}
     form{
       width: 80%;
       margin: auto;
@@ -282,5 +299,10 @@ body{
         margin-bottom: 10px;
       }
     }
+    @media (max-width:767px) {
+  .hideOnSmall{
+    display: none;
+  }
+}
   }
 }

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 .row {
   text-align: center;
   margin: auto; }
@@ -19,6 +19,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
   color: black; }
 
 h3 {
@@ -28,13 +29,13 @@ h3 {
 
 h4 {
   font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
   color: black;
   font-size: 1.5em; }
 
 h5 {
   font-family: 'Open Sans', sans-serif;
   color: white;
-  font-weight: bolder;
   font-size: 1.2em;
   margin: auto;
   width: 70%;
@@ -80,6 +81,10 @@ body {
             padding: 0px; }
           body .container .header .navMenu ul li:hover {
             cursor: pointer; }
+          @media (max-width: 767px) {
+            body .container .header .navMenu ul li {
+              background: white;
+              color: #df5720; } }
       body .container .header #headerLogo {
         margin-top: 3%; }
     body .container #todaySection {
@@ -175,6 +180,9 @@ body {
         body .container .submit .submitEvent button {
           margin-top: 15px;
           margin-bottom: 15px; }
+    @media (max-width: 767px) {
+      body .container .submit {
+        width: 90%; } }
     body .container form {
       width: 80%;
       margin: auto;
@@ -203,3 +211,6 @@ body {
       body .container .footer #emailForm {
         width: 90%;
         margin-bottom: 10px; }
+    @media (max-width: 767px) {
+      body .container .hideOnSmall {
+        display: none; } }
